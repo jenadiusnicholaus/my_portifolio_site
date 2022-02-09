@@ -1,0 +1,20 @@
+{
+  "name": "my-portfolio-site",
+  "version": "1.0.0",
+  "description": "This website is going to consist of all you need to know about my career , contacts and  the projects i worked , working and will work on ,",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jenadiusnicholaus/my-portfolio-site.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jenadiusnicholaus/my-portfolio-site/issues"
+  },
+  "homepage": "https://github.com/jenadiusnicholaus/my-portfolio-site#readme"
+}
