@@ -76,7 +76,7 @@
   }
 
   .link-container {
-    width: 60vw;
+    width: 50vw;
     margin-top: 10px;
     padding: 10px 20px 100px 5px;
     color: #fff;
@@ -95,7 +95,7 @@
   }
 
   .link-container a:hover {
-    font-size: 30px;
+    font-size: 25px;
     color: #3d6da5;
   }
 
