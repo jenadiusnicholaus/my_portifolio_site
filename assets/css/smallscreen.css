@@ -46,7 +46,7 @@
     background-repeat: no-repeat;
     background-position: bottom right;
     background-position-y: 27vh;
-    background-image: url("/home/jena/microverseprojects/my-portfolio-site/assets/img/mvector.png");
+    background-image: url("../img/mvector.png");
   }
 
   .hero h1 {
