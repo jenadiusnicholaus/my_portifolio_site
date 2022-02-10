@@ -5,66 +5,67 @@
   }
 
   html {
-    font-family: "Lucida Sans", sans-serif;
+    font-family: Crete Round;
   }
 
   .header {
-    padding: 17px 15px 15px 15px;
-    height: 72px;
-    background-color: #3c3a39;
-    color: #acb7c3;
-    position: relative;
-    max-width: 100vw;
-  }
-
-  .header nav {
-    top: 10px;
+    height: 20px;
     flex-direction: row;
     display: flex;
     justify-content: space-between;
-    flex-wrap: nowrap;
     align-items: center;
+    /* background-color: indigo */
   }
 
-  .header nav .logo {
-    font-size: 20px;
+  .header .logo {
+    font-weight: bold;
+    padding-top: 20px;
+    padding-left: 30px;
+    letter-spacing: 2px;
+    height: 14px;
+    font-size: 24px;
+    color: #fff;
+    text-decoration-line: none;
+    margin-bottom: 0px;
   }
 
-  .header nav .menu-icon {
-    height: 30px;
-    font-size: 40px;
+  .header .icon {
+    padding-top: 20px;
+    height: 10px;
+    color: #fff;
+    width: 30px;
+    font-size: 24px;
+    padding-right: 40px
   }
 
   .hero {
     border: 0;
-    max-width: 100vw;
-    margin: 0;
-    padding-top: 20px;
-    padding-left: 20px;
-    padding-right: 20px;
+    /* max-width: 100vw; */
+    padding: 120px 24px 120px 24px;
     background-color: #1c1a19;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-position: bottom;
-    background-image: url('https://lh5.googleusercontent.com/proxy/w3oh8vPkBYObX9gqYJpOXMA-lraeW32SsT_6fLv032xO3OwQBeKWRWzovY9c-CLwONIsT4R3VTeZAWeDUg0f2NAYh0SEWONVpJWf-mtClY6BcbPIZKd2TEQ=s0-d');
   }
 
   .hero h1 {
+    letter-spacing: 0.37px;
+    font-style: normal;
+    font-weight: normal;
     padding: 0;
     font-size: 13vw;
     color: #ff6b00;
     font-weight: bold;
     margin-bottom: 0;
-    line-height: 64px;
+    padding-bottom:0;
   }
 
   .hero h5 {
-    color: #acb7c3;
+    margin-top: 2px;
+    color: #fff;
     font-size: 24px;
     margin-bottom: 0;
   }
 
   .hero p {
+    padding-top:0px;
     font-size: 20px;
     color: #fff;
     line-height: 24px;
@@ -74,7 +75,7 @@
     width: 60vw;
     margin-top: 5px;
     padding: 20px 20px 100px 5px;
-    color: #acb7c3;
+    color: #fff;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
