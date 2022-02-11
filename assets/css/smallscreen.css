@@ -10,52 +10,55 @@
   }
 
   .header {
+    background-color: #3c3a39;
+    padding-bottom: 15px;
+    height: 5.7%;
+    width: 100%;
     position: fixed;
     top: 0;
-    height: 20px;
     flex-direction: row;
     display: flex;
     justify-content: space-between;
     align-items: center;
   }
 
-  .header .logo {
+  .logo {
     font-weight: bold;
-    padding-top: 10px;
+    padding-top: 20px;
     padding-left: 30px;
     letter-spacing: 2px;
-    height: 14px;
-    font-size: 24px;
+    font-size: 18px;
     color: #fff;
     text-decoration-line: none;
     margin-bottom: 0;
   }
 
-  .header .icon {
-    padding-top: 10px;
+  .icon {
+    padding-top: 20px;
     height: 10px;
-    color: #fff;
+    color: #dbd8d7;
     width: 30px;
-    font-size: 18px;
-    padding-right: 40px;
+    font-size: 17px;
+    padding-right: 25px;
   }
 
   .hero {
     border: 0;
-    height: 100%;
-    padding: 140px 25px 100px 24px;
+    height: 80.8vh;
+    padding: 120px 30px 20px 24px;
     background-color: #1c1a19;
     background-repeat: no-repeat;
     background-position: bottom right;
-    background-position-y: 43vh;
+    background-size: 30vh;
+    background-position-y: 197.4px;
     background-image: url("../img/mvector.png");
   }
 
   .hero h1 {
-    letter-spacing: 0.37px;
+    letter-spacing: 0.17px;
     font-style: normal;
     padding: 0;
-    font-size: 15vw;
+    font-size: 11vw;
     color: #ff6b00;
     font-weight: bold;
     padding-top: 10px;
@@ -67,19 +70,21 @@
     margin-top: 5px;
     font-size: 5vw;
     margin-bottom: 0;
-    color: #fff5e1;
+    color: #fff;
+    line-height: 32px;
   }
 
   .hero p {
-    font-size: 20px;
-    color: #fff;
-    line-height: 25px;
+    margin-top: 5px;
+    font-size: 22px;
+    color: #fff5e1;
+    line-height: 29px;
   }
 
   .link-container {
-    width: 50vw;
-    margin-top: 10px;
-    padding: 10px 20px 100px 5px;
+    width: 40.7vw;
+    margin-top: 30px;
+    padding: 10.6px 20px 100px 5px;
     color: #fff;
     display: flex;
     flex-direction: row;
@@ -92,6 +97,7 @@
 
   .link-container li a {
     font-size: 20px;
+    font-weight: bold;
     color: #fff;
   }
 
