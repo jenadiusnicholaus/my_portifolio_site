@@ -1,13 +1,8 @@
 body {
   margin: 0;
-  background-color: white;
+  background-color: rgb(255, 255, 255);
 }
 
-/* .header {
-  margin-top: 0;
-  height: 4%;
-  width: 100%;
-  background-color: rgb(59, 57, 57);
-  color: white;
-  padding-bottom: 10px;
-} */
+html {
+  font-family: serif;
+}
