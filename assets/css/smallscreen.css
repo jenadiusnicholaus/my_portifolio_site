@@ -1,0 +1,276 @@
+/* For Tablet View */
+@media screen and (min-device-width: 604px) and  (max-device-width: 1024px) {
+  .header {
+    background-color: #3c3a39;
+    padding-bottom: 15px;
+    height: 5.7%;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    flex-direction: row;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .logo {
+    font-weight: bold;
+    padding-top: 20px;
+    padding-left: 30px;
+    letter-spacing: 2px;
+    font-size: 18px;
+    color: #fff;
+    text-decoration-line: none;
+    margin-bottom: 0;
+  }
+
+  .icon {
+    padding-top: 20px;
+    height: 10px;
+    color: #dbd8d7;
+    width: 30px;
+    font-size: 17px;
+    padding-right: 25px;
+  }
+
+  .hero {
+    border: 0;
+    height: 100vh;
+    padding: 150px 30px 0 25px;
+    background-color: #1c1a19;
+    background-repeat: no-repeat;
+    background-position: bottom right;
+    background-size: 23vh;
+    background-position-y: 300px;
+    background-image: url("../img/mvector.png");
+  }
+
+  .hero h1 {
+    letter-spacing: 0.17px;
+    font-style: normal;
+    padding: 0;
+    font-size: 11vw;
+    color: #ff6b00;
+    font-weight: bold;
+    padding-top: 10px;
+    margin-bottom: 0;
+    padding-bottom: 0;
+  }
+
+  .hero h5 {
+    margin-top: 5px;
+    font-size: 5vw;
+    margin-bottom: 0;
+    color: #fff;
+    line-height: 32px;
+  }
+
+  .hero p {
+    margin-top: 20px;
+    font-size: 27px;
+    color: #fff5e1;
+    line-height: 60px;
+  }
+
+  .link-container {
+    width: 50.7vw;
+    margin-top: 24px;
+    padding: 10.6px 20px 100px 5px;
+    color: #fff;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .link-container li {
+    list-style-type: none;
+  }
+
+  .link-container li a {
+    font-size: 20px;
+    font-weight: bold;
+    color: #fff;
+  }
+
+  .link-container a:hover {
+    color: #3d6da5;
+  }
+}
+
+/* For Mobile portrait View */
+@media screen and (max-width: 604px) {
+  .header {
+    background-color: #3c3a39;
+    padding-bottom: 15px;
+    height: 5.7%;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    flex-direction: row;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .logo {
+    font-weight: bold;
+    padding-top: 20px;
+    padding-left: 30px;
+    letter-spacing: 2px;
+    font-size: 18px;
+    color: #fff;
+    text-decoration-line: none;
+    margin-bottom: 0;
+  }
+
+  .icon {
+    padding-top: 20px;
+    height: 10px;
+    color: #dbd8d7;
+    width: 30px;
+    font-size: 17px;
+    padding-right: 25px;
+  }
+
+  .hero {
+    border: 0;
+    height: 100%;
+    padding: 180px 30px 100px 24px;
+    background-color: #1c1a19;
+    background-repeat: no-repeat;
+    background-position: bottom right;
+    background-size: 20vh;
+    background-position-y: 300px;
+    background-image: url("../img/mvector.png");
+  }
+
+  .hero h1 {
+    letter-spacing: 0.17px;
+    font-style: normal;
+    padding: 0;
+    font-size: 11vw;
+    color: #ff6b00;
+    font-weight: bold;
+    padding-top: 10px;
+    margin-bottom: 0;
+    padding-bottom: 0;
+  }
+
+  .hero h5 {
+    margin-top: 5px;
+    font-size: 5vw;
+    margin-bottom: 0;
+    color: #fff;
+    line-height: 32px;
+  }
+
+  .hero p {
+    margin-top: 5px;
+    font-size: 16px;
+    color: #fff5e1;
+    line-height: 29px;
+  }
+
+  .link-container {
+    width: 50.7vw;
+    margin-top: 20px;
+    padding: 10.6px 20px 100px 5px;
+    color: #fff;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .link-container li {
+    list-style-type: none;
+  }
+
+  .link-container li a {
+    font-size: 20px;
+    font-weight: bold;
+    color: #fff;
+  }
+
+  .link-container a:hover {
+    color: #3d6da5;
+  }
+
+  main {
+    padding-top: 30px;
+    background-color: white;
+    height: 300px;
+  }
+}
+
+/* only on iphone 5 s/SE  */
+@media screen and (min-device-width: 320px) {
+  .hero {
+    height: 90vh;
+    padding: 90px 30px 0 25px;
+    background-size: 23vh;
+    background-position-y: 240px;
+  }
+
+  .hero p {
+    font-size: 19px;
+  }
+}
+
+/* Only on iphone 6/7/8  */
+@media screen and (min-width: 375px) {
+  .hero {
+    height: 82vh;
+    padding: 134.5px 30px 0 25px;
+    background-size: 24vh;
+    background-position-y: 270px;
+  }
+
+  .hero p {
+    font-size: 19.3px;
+  }
+}
+
+/* only on pexel 2 XL wi the hight of 823 */
+@media screen and (min-width: 411px) and (min-device-height: 823px) {
+  .hero {
+    height: 100%;
+    padding: 150px 30px 120px 25px;
+    background-size: 26vh;
+    background-position-y: 222px;
+  }
+
+  .hero p {
+    font-size: 20.3px;
+  }
+}
+
+/* for iPad  pro */
+@media (min-device-height: 1024px) and (max-device-width: 1366px) {
+  .hero {
+    padding: 200px 34px 120px 35px;
+    background-size: 26vh;
+    background-position-y: 300px;
+  }
+
+  .hero h1 {
+    letter-spacing: 0.17px;
+    color: #ff6b00;
+  }
+
+  .hero h5 {
+    margin-top: 23px;
+    font-size: 5vw;
+    margin-bottom: 0;
+    color: #fff;
+    line-height: 32px;
+  }
+
+  .hero p {
+    line-height: 50px;
+    font-size: 33.3px;
+  }
+
+  .link-container li a {
+    font-size: 40px;
+  }
+}
