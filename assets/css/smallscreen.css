@@ -95,6 +95,7 @@
   .link-container li.link-item a:hover {
     color: #3d6da5;
   }
+
    .main {
     background-color: #fff;
     display: flex;
@@ -814,7 +815,6 @@
   .stack-icon {
     width: 23px;
     height: 23px;
-    padding: 10;
     margin-right: 23px;
   }
 
