@@ -118,6 +118,10 @@
     justify-content: space-between;
   }
 
+  .recent-work {
+    padding: 0 24px 0 24px;
+  }
+
   hr.recent-work-line {
     flex: none;
     border: 1px solid #212121;
@@ -459,7 +463,8 @@
   .hero {
     border: 0;
     height: 100%;
-    padding: 180px 30px 100px 24px;
+    margin-bottom: 0;
+    padding: 180px 24px 0 24px;
     background-color: #1c1a19;
     background-repeat: no-repeat;
     background-position: bottom right;
@@ -515,31 +520,38 @@
     color: #fff;
   }
 
-  .link-containerli.link-item a:hover {
+  .link-container li.link-item a:hover {
     color: #3d6da5;
   }
 
   /* main section */
+  .main,
+  .recent-work,
+  .image-placeholder {
+    padding: 0 24px 0 24px;
+  }
+
   .main {
     background-color: #fff;
     display: flex;
     flex-direction: column;
-    align-items: center;
-    padding: 120px 0;
+    align-content: center;
+    padding: 100px 0;
     height: auto;
   }
 
-  .title {
-    padding-top: -20px;
-    position: static;
-    width: 327px;
-    font-size: 44.6px;
-    font-weight: bold;
-    text-align: center;
-    color: #000;
-    line-height: 52px;
-    display: flex;
-    justify-content: space-between;
+  .recent-work {
+    padding-top: 2px;
+    margin-top: 0;
+  }
+
+  .recent-work .title {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 11.3vw;
+    list-style: none;
+    line-height: 2vh;
+    color: #1c1a19;
   }
 
   hr.recent-work-line {
@@ -547,44 +559,42 @@
     border: 1px solid #212121;
     flex-grow: 0;
     margin: 10px 0;
+    margin-bottom: 80px;
   }
 
   .image-placeholder {
-    padding: 80.6px 24px 0 24px;
+    margin-top: 0;
     display: flex;
     flex-direction: column;
     order: 0;
     flex-grow: 0;
   }
 
-  .image-placeholder image.image {
-    width: 200px;
-    height: 300px;
-  }
-
   .image-placeholder h3 {
-    font-size: 35px;
-    margin-top: 24px;
+    font-size: 9vw;
+    margin-top: 4vh;
     margin-bottom: 0;
+    font-weight: normal;
   }
 
   .image-placeholder p {
     padding-top: 3px;
-    font-size: 20px;
-    line-height: 24px;
+    font-size: 16px;
+    line-height: 3vh;
     color: #091e42;
     margin-top: 12px;
     margin-bottom: 0;
   }
 
-  .teck-stacks {
-    height: 70px;
-    margin-bottom: 12px;
-    width: 80%;
+  .image-placeholder .teck-stacks {
+    height: 10vh;
+    padding-top: 0;
+    margin-top: 0;
+    margin-bottom: 22px;
+    width: 70vw;
   }
 
   .image-placeholder ul.ul-teck-stacks {
-    height: 10px;
     padding-left: 0;
     display: flex;
     flex-direction: row;
@@ -598,47 +608,43 @@
     font-weight: bold;
     font-size: 15px;
     line-height: 20px;
-    margin-right: 12px;
+    margin-right: 3vw;
   }
 
   .teck-stacks-item .btn-tech-stacks {
-    height: 40px;
     background: #fff;
     border: 1px solid #8993a4;
     box-sizing: border-box;
-    padding: 10px 12px;
-    color: #091e42;
+    padding: 1.5vh 4vw 1.5vh 4vw;
+    align-items: center;
     font-style: normal;
-    font-weight: 500;
-    font-size: 15px;
-    line-height: 20px;
+    font-weight: normal;
+    font-size: 4vw;
   }
 
-  .image-placeholder .teck-stacks-item .btn-tech-stacks:hover {
+  .teck-stacks-item .btn-tech-stacks:hover {
     margin-top: 200px;
-    background: #bdd7e0;
+    background: #e0bdc0;
     border: 1px solid #8993a4;
     box-sizing: border-box;
   }
 
+  /* Todo  */
   .image-placeholder .btn-see-project {
     height: 80px;
-    width: 100%;
   }
 
   .image-placeholder .btn-see-project button {
     background-color: #ff6b00;
     position: static;
-    width: 124px;
-    height: 48px;
+    width: 40.7vw;
+    height: 9vh;
     left: 0;
-    top: 259px;
     padding: 12px;
     border: 1px #ff6b00;
     font-style: normal;
     font-weight: bold;
-    font-size: 17px;
-    line-height: 24px;
+    font-size: 4vw;
     color: #fff;
   }
 
@@ -655,7 +661,7 @@
 
   .recent-works .work-card {
     padding: 0 24px 0 24px;
-    height: 386px;
+    height: 368px;
     background: linear-gradient(180.45deg, rgba(38, 38, 38, 0) 0.75%, rgba(38, 38, 38, 0.9) 61.94%), url('../img/maskimage.png');
   }
 
@@ -670,23 +676,27 @@
     line-height-step: 2px;
     line-height: 50px;
     color: #fff;
+    padding-top: 84px;
     margin-bottom: 0;
   }
 
   .work-card-body p {
     color: #fff;
     font-style: normal;
-    font-weight: bold;
-    font-size: 24px;
+    font-weight: normal;
+    font-size: 2vw;
     line-height: 28px;
+    margin-top: 0;
+    margin-bottom: 0;
   }
 
   .recent-works .work-card-body .work-tech-stack ul.ul-links {
+    margin-top: 0;
     padding-left: 0;
     display: flex;
     flex-direction: row;
     justify-content: flex-start;
-    margin-bottom: 0;
+    margin-bottom: 22px;
   }
 
   .recent-works .work-card-body .work-tech-stack ul.ul-links .t-stack {
