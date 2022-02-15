@@ -541,7 +541,6 @@
   }
 
   .recent-work {
-    padding-top: 2px;
     margin-top: 0;
   }
 
@@ -579,8 +578,8 @@
 
   .image-placeholder p {
     padding-top: 3px;
-    font-size: 16px;
-    line-height: 3vh;
+    font-size: 17px;
+    line-height: 3.5vh;
     color: #091e42;
     margin-top: 12px;
     margin-bottom: 0;
@@ -590,7 +589,7 @@
     height: 10vh;
     padding-top: 0;
     margin-top: 0;
-    margin-bottom: 22px;
+    margin-bottom: 12px;
     width: 70vw;
   }
 
@@ -612,21 +611,14 @@
   }
 
   .teck-stacks-item .btn-tech-stacks {
-    background: #fff;
+    background-color: #fff;
     border: 1px solid #8993a4;
     box-sizing: border-box;
-    padding: 1.5vh 4vw 1.5vh 4vw;
+    padding: 1.5vh 4vw 12px 4vw;
     align-items: center;
     font-style: normal;
     font-weight: normal;
     font-size: 4vw;
-  }
-
-  .teck-stacks-item .btn-tech-stacks:hover {
-    margin-top: 200px;
-    background: #e0bdc0;
-    border: 1px solid #8993a4;
-    box-sizing: border-box;
   }
 
   /* Todo  */
@@ -637,14 +629,26 @@
   .image-placeholder .btn-see-project button {
     background-color: #ff6b00;
     position: static;
-    width: 40.7vw;
-    height: 9vh;
+    width: 34.9vw;
+    height: 7vh;
     left: 0;
-    padding: 12px;
+    padding-top: 12px;
     border: 1px #ff6b00;
     font-style: normal;
     font-weight: bold;
-    font-size: 4vw;
+    font-size: 5vw;
+    color: #fff;
+  }
+
+  .image-placeholder .btn-see-project button:hover {
+    background: #fff5e1;
+    border: 2px solid #ff6b00;
+    color: #ff6b00;
+  }
+
+   .image-placeholder .btn-see-project button:focus {
+     background-color: #ff6b00;
+    border: 2px solid #ff6b00;
     color: #fff;
   }
 
@@ -661,7 +665,7 @@
 
   .recent-works .work-card {
     padding: 0 24px 0 24px;
-    height: 368px;
+    height: 348px;
     background: linear-gradient(180.45deg, rgba(38, 38, 38, 0) 0.75%, rgba(38, 38, 38, 0.9) 61.94%), url('../img/maskimage.png');
   }
 
@@ -671,7 +675,7 @@
 
   .work-card-body h1 {
     font-style: normal;
-    font-weight: bold;
+    font-weight: normal;
     font-size: 35px;
     line-height-step: 2px;
     line-height: 50px;
@@ -684,7 +688,7 @@
     color: #fff;
     font-style: normal;
     font-weight: normal;
-    font-size: 2vw;
+    font-size: 16px;
     line-height: 28px;
     margin-top: 0;
     margin-bottom: 0;
@@ -855,11 +859,18 @@
   }
 }
 
+@media screen and (max-width: 360px) {
+  .recent-works .work-card {
+    padding: 0 24px 30px 24px;
+    /* margin-bottom: 34px;; */
+    height: 358px;
+  }
+}
 /* only on iphone 5 s/SE  */
 @media screen and (min-device-width: 320px) {
   .hero {
     height: 90vh;
-    padding: 90px 30px 0 25px;
+    padding: 90px 24px 0 24px;
     background-size: 23vh;
     background-position-y: 240px;
   }
@@ -873,7 +884,7 @@
 @media screen and (min-width: 375px) {
   .hero {
     height: 82vh;
-    padding: 134.5px 30px 0 25px;
+    padding: 134.5px 24px 0 24px;
     background-size: 24vh;
     background-position-y: 270px;
   }
@@ -883,11 +894,11 @@
   }
 }
 
-/* only on pexel 2 XL wi the hight of 823 */
+/* only on pexel 2 XL with the hight of 823 */
 @media screen and (min-width: 411px) and (min-device-height: 823px) {
   .hero {
     height: 100%;
-    padding: 150px 30px 120px 25px;
+    padding: 150px 24px 120px 24px;
     background-size: 26vh;
     background-position-y: 222px;
   }
@@ -900,7 +911,7 @@
 /* for iPad  pro */
 @media (min-device-height: 1024px) and (max-device-width: 1366px) {
   .hero {
-    padding: 200px 34px 120px 35px;
+    padding: 200px 24px 120px 24px;
     background-size: 26vh;
     background-position-y: 300px;
   }
