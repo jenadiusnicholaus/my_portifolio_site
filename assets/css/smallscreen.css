@@ -96,30 +96,32 @@
     color: #3d6da5;
   }
 
+  .main,
+  .recent-work,
+  .image-placeholder {
+    padding: 0 24px 0 24px;
+  }
+
   .main {
     background-color: #fff;
     display: flex;
     flex-direction: column;
-    align-items: center;
-    padding: 120px 0;
+    align-content: center;
+    padding: 100px 0;
     height: auto;
   }
 
-  .title {
-    padding-top: -20px;
-    position: static;
-    width: 327px;
-    font-size: 44.6px;
-    font-weight: bold;
-    text-align: center;
-    color: #000;
-    line-height: 52px;
-    display: flex;
-    justify-content: space-between;
+  .recent-work {
+    margin-top: 0;
   }
 
-  .recent-work {
-    padding: 0 24px 0 24px;
+  .recent-work .title {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 11.3vw;
+    list-style: none;
+    line-height: 2vh;
+    color: #1c1a19;
   }
 
   hr.recent-work-line {
@@ -127,44 +129,43 @@
     border: 1px solid #212121;
     flex-grow: 0;
     margin: 10px 0;
+    margin-bottom: 80px;
   }
 
   .image-placeholder {
-    padding: 80.6px 24px 0 24px;
+    margin-top: 0;
     display: flex;
     flex-direction: column;
     order: 0;
     flex-grow: 0;
   }
 
-  .image-placeholder image.image {
-    width: 200px;
-    height: 300px;
-  }
-
   .image-placeholder h3 {
-    font-size: 35px;
-    margin-top: 24px;
+    font-size: 9vw;
+    margin-top: 4vh;
     margin-bottom: 0;
+    font-weight: normal;
   }
 
   .image-placeholder p {
     padding-top: 3px;
-    font-size: 20px;
-    line-height: 24px;
+    font-size: 17px;
+    line-height: 3.5vh;
     color: #091e42;
     margin-top: 12px;
     margin-bottom: 0;
   }
 
-  .teck-stacks {
-    height: 70px;
-    margin-bottom: 12px;
-    width: 80%;
+  .image-placeholder .teck-stacks {
+    height: 10vh;
+    padding-top: 0;
+    margin-top: 0;
+    margin-bottom: 0;
+
+    /* background-color: red */
   }
 
   .image-placeholder ul.ul-teck-stacks {
-    height: 10px;
     padding-left: 0;
     display: flex;
     flex-direction: row;
@@ -178,47 +179,48 @@
     font-weight: bold;
     font-size: 15px;
     line-height: 20px;
-    margin-right: 12px;
+    margin-right: 3vw;
   }
 
   .teck-stacks-item .btn-tech-stacks {
-    height: 40px;
-    background: #fff;
+    background-color: #fff;
     border: 1px solid #8993a4;
     box-sizing: border-box;
-    padding: 10px 12px;
-    color: #091e42;
+    padding: 1.5vh 4vw 12px 4vw;
+    align-items: center;
     font-style: normal;
-    font-weight: 500;
-    font-size: 15px;
-    line-height: 20px;
+    font-weight: normal;
+    font-size: 4vw;
   }
 
-  .image-placeholder .teck-stacks-item .btn-tech-stacks:hover {
-    margin-top: 200px;
-    background: #bdd7e0;
-    border: 1px solid #8993a4;
-    box-sizing: border-box;
-  }
-
+  /* Todo  */
   .image-placeholder .btn-see-project {
     height: 80px;
-    width: 100%;
   }
 
   .image-placeholder .btn-see-project button {
     background-color: #ff6b00;
     position: static;
-    width: 124px;
-    height: 48px;
+    width: 34.9vw;
+    height: 7vh;
     left: 0;
-    top: 259px;
-    padding: 12px;
+    padding-top: 12px;
     border: 1px #ff6b00;
     font-style: normal;
     font-weight: bold;
-    font-size: 17px;
-    line-height: 24px;
+    font-size: 5vw;
+    color: #fff;
+  }
+
+  .image-placeholder .btn-see-project button:hover {
+    background: #fff5e1;
+    border: 2px solid #ff6b00;
+    color: #ff6b00;
+  }
+
+  .image-placeholder .btn-see-project button:focus {
+    background-color: #ff6b00;
+    border: 2px solid #ff6b00;
     color: #fff;
   }
 
@@ -235,7 +237,7 @@
 
   .recent-works .work-card {
     padding: 0 24px 0 24px;
-    height: 386px;
+    height: 348px;
     background: linear-gradient(180.45deg, rgba(38, 38, 38, 0) 0.75%, rgba(38, 38, 38, 0.9) 61.94%), url('../img/maskimage.png');
   }
 
@@ -245,28 +247,32 @@
 
   .work-card-body h1 {
     font-style: normal;
-    font-weight: bold;
+    font-weight: normal;
     font-size: 35px;
     line-height-step: 2px;
     line-height: 50px;
     color: #fff;
+    padding-top: 84px;
     margin-bottom: 0;
   }
 
   .work-card-body p {
     color: #fff;
     font-style: normal;
-    font-weight: bold;
-    font-size: 24px;
+    font-weight: normal;
+    font-size: 16px;
     line-height: 28px;
+    margin-top: 0;
+    margin-bottom: 0;
   }
 
   .recent-works .work-card-body .work-tech-stack ul.ul-links {
+    margin-top: 0;
     padding-left: 0;
     display: flex;
     flex-direction: row;
     justify-content: flex-start;
-    margin-bottom: 0;
+    margin-bottom: 22px;
   }
 
   .recent-works .work-card-body .work-tech-stack ul.ul-links .t-stack {
@@ -291,7 +297,7 @@
     height: 50px;
   }
 
-  .card-container .work-card-footer button {
+  .card-container .work-card-footer button.footer-btn {
     flex: 1;
     width: inherit;
     background-color: #ff6b00;
@@ -301,6 +307,19 @@
     font-size: 17px;
     line-height: 24px;
     border: 0 #ff6b00;
+    color: #fff;
+  }
+
+  /* ===================== to merge ========================= */
+  .card-container .work-card-footer button.footer-btn:hover {
+    background: #fff5e1;
+    border: 2px solid #ff6b00;
+    color: #ff6b00;
+  }
+
+  .card-container .work-card-footer button.footer-btn:focus {
+    background-color: #ff6b00;
+    border: 2px solid #ff6b00;
     color: #fff;
   }
 
@@ -348,6 +367,18 @@
     background-color: #ff6b00;
   }
 
+  .about-me button.btn-get-my-resume:hover {
+    background: #fff5e1;
+    border: 2px solid #ff6b00;
+    color: #ff6b00;
+  }
+
+  .about-me button.btn-get-my-resume:focus {
+    background-color: #ff6b00;
+    border: 2px solid #ff6b00;
+    color: #fff;
+  }
+
   hr.about-me-line {
     flex: none;
     border: 1px solid #fff;
@@ -392,10 +423,10 @@
     justify-content: space-evenly;
   }
 
-  img.stack-icon {
+  .stack-icon {
     width: 23px;
     height: 23px;
-    margin-right: 12px;
+    margin-right: 23px;
   }
 
   .language,
@@ -418,10 +449,6 @@
     font-weight: normal;
     font-size: 30px;
     line-height: 50px;
-  }
-
-  .get-in-touch {
-    padding-top: 120px;
   }
 }
 
@@ -589,8 +616,7 @@
     height: 10vh;
     padding-top: 0;
     margin-top: 0;
-    margin-bottom: 12px;
-    width: 70vw;
+    margin-bottom: 0;
   }
 
   .image-placeholder ul.ul-teck-stacks {
@@ -646,8 +672,8 @@
     color: #ff6b00;
   }
 
-   .image-placeholder .btn-see-project button:focus {
-     background-color: #ff6b00;
+  .image-placeholder .btn-see-project button:focus {
+    background-color: #ff6b00;
     border: 2px solid #ff6b00;
     color: #fff;
   }
@@ -725,7 +751,7 @@
     height: 50px;
   }
 
-  .card-container .work-card-footer button {
+  .card-container .work-card-footer button.footer-btn {
     flex: 1;
     width: inherit;
     background-color: #ff6b00;
@@ -735,6 +761,19 @@
     font-size: 17px;
     line-height: 24px;
     border: 0 #ff6b00;
+    color: #fff;
+  }
+
+  /* ===================== to merge ========================= */
+  .card-container .work-card-footer button.footer-btn:hover {
+    background: #fff5e1;
+    border: 2px solid #ff6b00;
+    color: #ff6b00;
+  }
+
+  .card-container .work-card-footer button.footer-btn:focus {
+    background-color: #ff6b00;
+    border: 2px solid #ff6b00;
     color: #fff;
   }
 
@@ -780,6 +819,18 @@
     line-height: 24px;
     color: #fff;
     background-color: #ff6b00;
+  }
+
+  .about-me button.btn-get-my-resume:hover {
+    background: #fff5e1;
+    border: 2px solid #ff6b00;
+    color: #ff6b00;
+  }
+
+  .about-me button.btn-get-my-resume:focus {
+    background-color: #ff6b00;
+    border: 2px solid #ff6b00;
+    color: #fff;
   }
 
   hr.about-me-line {
@@ -853,19 +904,33 @@
     font-size: 30px;
     line-height: 50px;
   }
-
-  .get-in-touch {
-    padding-top: 120px;
-  }
 }
 
+/* for the device with width lower than 340 */
 @media screen and (max-width: 360px) {
+  .image-placeholder .teck-stacks {
+    margin-top: 12px;
+    margin-bottom: 12px;
+  }
+
   .recent-works .work-card {
     padding: 0 24px 30px 24px;
-    /* margin-bottom: 34px;; */
     height: 358px;
   }
 }
+
+@media screen and (max-width: 375px) {
+  .image-placeholder .teck-stacks {
+    margin-top: 12px;
+    margin-bottom: 0;
+  }
+
+  .recent-works .work-card {
+    padding: 0 24px 30px 24px;
+    height: 358px;
+  }
+}
+
 /* only on iphone 5 s/SE  */
 @media screen and (min-device-width: 320px) {
   .hero {
