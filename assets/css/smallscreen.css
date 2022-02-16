@@ -157,19 +157,19 @@
   }
 
   .image-placeholder .teck-stacks {
-    height: 9vh;
-    padding: 0;
+    height: 100vh;
+    padding: 12px;
     margin-top: 0;
-    background-color: #ff6b00;
-    margin-bottom: 0;
+    margin-bottom: 100px;
   }
 
   .image-placeholder ul.ul-teck-stacks {
     padding-left: 0;
+    margin-left: 0;
     display: flex;
     flex-direction: row;
     align-items: start;
-    justify-content: space-evenly;
+    justify-content: space-around;
   }
 
   .image-placeholder .teck-stacks-item {
@@ -182,6 +182,7 @@
   }
 
   .teck-stacks-item .btn-tech-stacks {
+    margin-bottom: 24px;
     background-color: #fff;
     border: 1px solid #8993a4;
     padding: 1.5vh 4vw 12px 4vw;
@@ -192,7 +193,8 @@
 
   /* Todo  */
   .image-placeholder .btn-see-project {
-    height: 80px;
+    margin-top: 12px;
+    height: 100px;
   }
 
   .image-placeholder .btn-see-project button {
