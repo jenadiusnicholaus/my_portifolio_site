@@ -257,7 +257,7 @@
   }
 }
 
-/* ============================= only on pexel 2 XL wi the hight of 823============== */
+/* ============================= only on pexel 2 XL ============== */
 @media screen and (min-width: 411px) {
   .hero {
     height: 100%;
@@ -269,20 +269,6 @@
   .hero p {
     font-size: 22.3px;
     line-height: 35px;
-  }
-}
-
-/* ======= Shiring a browser on wide range of between 422  and  823  px ========= */
-@media screen and (min-width: 411px)  and (max-device-width: 823px) {
-  .hero {
-    height: 100%;
-    padding: 150px 30px 120px 25px;
-    background-size: 29vh;
-    background-position-y: 222px;
-  }
-
-  .hero p {
-    font-size: 25.3px;
   }
 }
 
