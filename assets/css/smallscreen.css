@@ -191,7 +191,7 @@
     background-repeat: no-repeat;
     background-position: bottom right;
     background-size: 20vh;
-    background-position-y: 300px;
+    background-position-y: 290px;
     background-image: url("../img/mvector.png");
   }
 
@@ -273,7 +273,7 @@
     height: 82vh;
     padding: 134.5px 30px 0 25px;
     background-size: 27vh;
-    background-position-y: 230px;
+    background-position-y: 250px;
   }
 
   .hero p {
@@ -287,7 +287,7 @@
     height: 100%;
     padding: 150px 30px 100px 25px;
     background-size: 24.4vh;
-    background-position-y: 320px;
+    background-position-y: 200px;
   }
 
   .hero p {
@@ -298,9 +298,9 @@
 
 @media screen and (min-device-width: 414px) {
   .hero {
-    height: 80%;
+    height: 100%;
     padding: 120px 30px 90px 25px;
-    background-size: 23.4vh;
+    background-size: 20.4vh;
     background-position-y: 270px;
   }
 
@@ -315,7 +315,7 @@
     height: 100%;
     padding: 140px 30px 100px 25px;
     background-size: 24.4vh;
-    background-position-y: 310px;
+    background-position-y: 290px;
   }
 
   .hero p {
