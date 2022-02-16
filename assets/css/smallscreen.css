@@ -1,9 +1,15 @@
 /* =============================For Tablet View========================== */
 @media screen and (min-device-width: 604px) and  (max-device-width: 1024px) {
-  .header {
+  header {
+    height: 5.7%;
+    width: 100%;
+    position: fixed;
+    top: 0;
+  }
+
+  header nav {
     background-color: #3c3a39;
     padding-bottom: 15px;
-    height: 5.7%;
     width: 100%;
     position: fixed;
     top: 0;
@@ -13,9 +19,12 @@
     align-items: center;
   }
 
-  .logo {
+  .brand {
+     padding-top: 20px;
+  }
+
+  .brand .logo {
     font-weight: bold;
-    padding-top: 20px;
     padding-left: 30px;
     letter-spacing: 2px;
     font-size: 18px;
@@ -24,8 +33,11 @@
     margin-bottom: 0;
   }
 
-  .icon {
+  .hamburger {
     padding-top: 20px;
+  }
+
+  .hamburger .icon {
     height: 10px;
     color: #dbd8d7;
     width: 30px;
@@ -41,7 +53,7 @@
     background-repeat: no-repeat;
     background-position: bottom right;
     background-size: 23vh;
-    background-position-y: 100px;
+    background-position-y: 200px;
     background-image: url("../img/mvector.png");
   }
 
@@ -126,10 +138,16 @@
 
 /* ========================= For Mobile portrait View ======================== */
 @media screen and (max-width: 604px) {
-  .header {
+  header {
+    height: 5.7%;
+    width: 100%;
+    position: fixed;
+    top: 0;
+  }
+
+  header nav {
     background-color: #3c3a39;
     padding-bottom: 15px;
-    height: 5.7%;
     width: 100%;
     position: fixed;
     top: 0;
@@ -138,10 +156,12 @@
     justify-content: space-between;
     align-items: center;
   }
+  .brand {
+     padding-top: 20px;
+  }
 
-  .logo {
+  .brand .logo {
     font-weight: bold;
-    padding-top: 20px;
     padding-left: 30px;
     letter-spacing: 2px;
     font-size: 18px;
@@ -150,8 +170,11 @@
     margin-bottom: 0;
   }
 
-  .icon {
+  .hamburger {
     padding-top: 20px;
+  }
+
+  .hamburger .icon {
     height: 10px;
     color: #dbd8d7;
     width: 30px;
