@@ -149,7 +149,7 @@
 
   .image-placeholder p {
     padding-top: 3px;
-    font-size: 17px;
+    font-size: 30px;
     line-height: 3.5vh;
     color: #091e42;
     margin-top: 12px;
@@ -157,12 +157,11 @@
   }
 
   .image-placeholder .teck-stacks {
-    height: 10vh;
-    padding-top: 0;
+    height: 9vh;
+    padding: 0;
     margin-top: 0;
+    background-color: #ff6b00;
     margin-bottom: 0;
-
-    /* background-color: red */
   }
 
   .image-placeholder ul.ul-teck-stacks {
@@ -170,7 +169,7 @@
     display: flex;
     flex-direction: row;
     align-items: start;
-    justify-content: space-between;
+    justify-content: space-evenly;
   }
 
   .image-placeholder .teck-stacks-item {
@@ -185,9 +184,7 @@
   .teck-stacks-item .btn-tech-stacks {
     background-color: #fff;
     border: 1px solid #8993a4;
-    box-sizing: border-box;
     padding: 1.5vh 4vw 12px 4vw;
-    align-items: center;
     font-style: normal;
     font-weight: normal;
     font-size: 4vw;
@@ -295,10 +292,11 @@
   .card-container .work-card-footer {
     width: 100%;
     height: 50px;
+    background-color: red;
   }
 
   .card-container .work-card-footer button.footer-btn {
-    flex: 1;
+    /* flex: 1; */
     width: inherit;
     background-color: #ff6b00;
     height: 48px;
@@ -598,7 +596,7 @@
 
   .image-placeholder h3 {
     font-size: 9vw;
-    margin-top: 4vh;
+    margin-top: 2vh;
     margin-bottom: 0;
     font-weight: normal;
   }
@@ -606,7 +604,7 @@
   .image-placeholder p {
     padding-top: 3px;
     font-size: 17px;
-    line-height: 3.5vh;
+    line-height: 24px;
     color: #091e42;
     margin-top: 12px;
     margin-bottom: 0;
@@ -650,6 +648,7 @@
   /* Todo  */
   .image-placeholder .btn-see-project {
     height: 80px;
+    margin-top: 12px;
   }
 
   .image-placeholder .btn-see-project button {
@@ -906,11 +905,36 @@
   }
 }
 
-/* for the device with width lower than 340 */
+/* for the device with width greater than 482 */
+@media screen and (min-width: 474px) {
+  .image-placeholder .teck-stacks {
+    margin-top: 12px;
+    margin-bottom: 0;
+  }
+
+  .recent-works .work-card {
+    height: 313px;
+  }
+}
+
+@media screen and (min-width: 478px) {
+  .image-placeholder .teck-stacks {
+    height: 6vh;
+    margin-top: 12px;
+    margin-bottom: 12px;
+  }
+
+  .recent-works .work-card {
+    /* padding: 0 24px 30px 24px; */
+    height: 323px;
+  }
+}
+
+/* for the device with width lower than 360 */
 @media screen and (max-width: 360px) {
   .image-placeholder .teck-stacks {
     margin-top: 12px;
-    margin-bottom: 12px;
+    padding-bottom: 12px;
   }
 
   .recent-works .work-card {
@@ -926,8 +950,7 @@
   }
 
   .recent-works .work-card {
-    padding: 0 24px 30px 24px;
-    height: 358px;
+    height: 348px;
   }
 }
 
