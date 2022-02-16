@@ -254,16 +254,16 @@
 }
 
 /* =========================== only on iphone 5 s/SE ===================== */
-@media screen and (min-device-width: 320px) {
+@media screen and (max-device-width: 320px) {
   .hero {
     height: 90vh;
-    padding: 90px 30px 0 25px;
+    padding: 70px 30px 0 25px;
     background-size: 23vh;
     background-position-y: 240px;
   }
 
   .hero p {
-    font-size: 19px;
+    font-size: 16px;
   }
 }
 
@@ -287,7 +287,35 @@
     height: 100%;
     padding: 150px 30px 100px 25px;
     background-size: 24.4vh;
-    background-position-y: 221px;
+    background-position-y: 320px;
+  }
+
+  .hero p {
+    font-size: 22.3px;
+    line-height: 35px;
+  }
+}
+
+@media screen and (min-device-width: 414px) {
+  .hero {
+    height: 80%;
+    padding: 120px 30px 90px 25px;
+    background-size: 23.4vh;
+    background-position-y: 270px;
+  }
+
+  .hero p {
+    font-size: 22.3px;
+    line-height: 35px;
+  }
+}
+
+@media screen and (min-width: 411px) and (max-device-width: 823px) {
+  .hero {
+    height: 100%;
+    padding: 140px 30px 100px 25px;
+    background-size: 24.4vh;
+    background-position-y: 310px;
   }
 
   .hero p {
