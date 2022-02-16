@@ -20,7 +20,7 @@
   }
 
   .brand {
-     padding-top: 20px;
+    padding-top: 20px;
   }
 
   .brand .logo {
@@ -156,8 +156,9 @@
     justify-content: space-between;
     align-items: center;
   }
+
   .brand {
-     padding-top: 20px;
+    padding-top: 20px;
   }
 
   .brand .logo {
