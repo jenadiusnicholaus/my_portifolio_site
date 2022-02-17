@@ -256,19 +256,19 @@
   .work-card-body h1 {
     font-style: normal;
     font-weight: normal;
-    font-size: 40px;
+    font-size: 50px;
     line-height-step: 2px;
     line-height: 50px;
     color: #fff;
     padding-top: 84px;
-    margin-bottom: 0;
+    margin-bottom: 24px;
   }
 
   .work-card-body p {
     color: #fff;
     font-style: normal;
     font-weight: normal;
-    font-size: 24px;
+    font-size: 32px;
     line-height: 5vh;
     margin-top: 0;
     margin-bottom: 0;
@@ -1052,19 +1052,9 @@
     font-size: 22.3px;
     line-height: 35px;
   }
-}
 
-@media screen and (min-device-width: 414px) {
-  .hero {
-    height: 100%;
-    padding: 120px 30px 90px 25px;
-    background-size: 20.4vh;
-    background-position-y: 270px;
-  }
-
-  .hero p {
-    font-size: 22.3px;
-    line-height: 35px;
+  .recent-works .work-card {
+    height: 358px;
   }
 }
 
@@ -1079,6 +1069,10 @@
   .hero p {
     font-size: 22.3px;
     line-height: 35px;
+  }
+
+  .recent-works .work-card {
+    height: 358px;
   }
 }
 
@@ -1115,24 +1109,12 @@
 
 @media screen and  (min-width: 488px) {
   .recent-works .work-card {
-    height: 299px;
+    height: 399px;
   }
 }
 
-@media screen and  (min-width: 364px) {
+@media screen and  (min-width: 432px) {
   .recent-works .work-card {
-    height: 358px;
-  }
-}
-
-@media screen and  (min-width: 382px) {
-  .recent-works .work-card {
-    height: 348px;
-  }
-}
-
-@media screen and  (min-width: 389px) {
-  .recent-works .work-card {
-    height: 294px;
+    height: 399px;
   }
 }
