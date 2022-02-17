@@ -53,7 +53,7 @@
     background-repeat: no-repeat;
     background-position: bottom right;
     background-size: 23vh;
-    background-position-y: 200px;
+    background-position-y: 300px;
     background-image: url("../img/mvector.png");
   }
 
@@ -161,27 +161,24 @@
 
   .image-placeholder p {
     padding-top: 3px;
-    font-size: 30px;
-    line-height: 3.5vh;
+    font-size: 40px;
+    line-height: 5vh;
     color: #091e42;
     margin-top: 12px;
-    margin-bottom: 0;
+    margin-bottom: 12px;
   }
 
   .image-placeholder .teck-stacks {
-    height: 100vh;
-    padding: 12px;
     margin-top: 0;
-    margin-bottom: 100px;
+    padding: 0;
   }
 
   .image-placeholder ul.ul-teck-stacks {
+    margin-top: 3px;
     padding-left: 0;
     margin-left: 0;
     display: flex;
     flex-direction: row;
-    align-items: start;
-    justify-content: space-around;
   }
 
   .image-placeholder .teck-stacks-item {
@@ -190,14 +187,14 @@
     font-weight: bold;
     font-size: 15px;
     line-height: 20px;
-    margin-right: 3vw;
+    margin-right: 1vw;
   }
 
   .teck-stacks-item .btn-tech-stacks {
-    margin-bottom: 24px;
     background-color: #fff;
     border: 1px solid #8993a4;
     padding: 1.5vh 4vw 12px 4vw;
+    margin-right: 18px;
     font-style: normal;
     font-weight: normal;
     font-size: 4vw;
@@ -213,9 +210,9 @@
     background-color: #ff6b00;
     position: static;
     width: 34.9vw;
-    height: 7vh;
+    height: 9vh;
     left: 0;
-    padding-top: 12px;
+    padding: 12px;
     border: 1px #ff6b00;
     font-style: normal;
     font-weight: bold;
@@ -248,18 +245,18 @@
 
   .recent-works .work-card {
     padding: 0 24px 0 24px;
-    height: 348px;
+    height: 758px;
     background: linear-gradient(180.45deg, rgba(38, 38, 38, 0) 0.75%, rgba(38, 38, 38, 0.9) 61.94%), url('../img/maskimage.png');
   }
 
   .work-card-body {
-    height: inherit;
+    height: 400px;
   }
 
   .work-card-body h1 {
     font-style: normal;
     font-weight: normal;
-    font-size: 35px;
+    font-size: 40px;
     line-height-step: 2px;
     line-height: 50px;
     color: #fff;
@@ -271,8 +268,8 @@
     color: #fff;
     font-style: normal;
     font-weight: normal;
-    font-size: 16px;
-    line-height: 28px;
+    font-size: 24px;
+    line-height: 5vh;
     margin-top: 0;
     margin-bottom: 0;
   }
@@ -322,7 +319,6 @@
     color: #fff;
   }
 
-  /* ===================== to merge ========================= */
   .card-container .work-card-footer button.footer-btn:hover {
     background: #fff5e1;
     border: 2px solid #ff6b00;
@@ -363,18 +359,19 @@
   .about-me p {
     font-style: normal;
     font-weight: normal;
-    font-size: 20px;
-    line-height: 30px;
+    font-size: 24px;
+    line-height: 35px;
     color: #f4f5f7;
   }
 
   .about-me button.btn-get-my-resume {
-    padding: 16px;
-    width: 161px;
+    width: 200px;
+    height: 9vh;
     font-style: normal;
     font-weight: bold;
-    font-size: 17px;
+    font-size: 2vh;
     line-height: 24px;
+    padding: 12px;
     color: #fff;
     background-color: #ff6b00;
   }
@@ -985,6 +982,13 @@
 
 /* for the device with width lower than 360 */
 @media screen and (max-width: 360px) {
+   .hero {
+    height: 100%;
+    padding: 120px 30px 90px 25px;
+    background-size: 20.4vh;
+    background-position-y: 270px;
+  }
+
   .image-placeholder .teck-stacks {
     margin-top: 12px;
     padding-bottom: 12px;
@@ -1011,11 +1015,7 @@
 @media screen and (max-device-width: 320px) {
   .hero {
     height: 90vh;
-<<<<<<< HEAD
-    padding: 90px 24px 0 24px;
-=======
     padding: 70px 30px 0 25px;
->>>>>>> main
     background-size: 23vh;
     background-position-y: 240px;
   }
@@ -1029,10 +1029,6 @@
 @media screen and (min-width: 375px) {
   .hero {
     height: 82vh;
-<<<<<<< HEAD
-    padding: 134.5px 24px 0 24px;
-    background-size: 24vh;
-=======
     padding: 134.5px 30px 0 25px;
     background-size: 27vh;
     background-position-y: 250px;
@@ -1063,7 +1059,6 @@
     height: 100%;
     padding: 120px 30px 90px 25px;
     background-size: 20.4vh;
->>>>>>> main
     background-position-y: 270px;
   }
 
@@ -1090,11 +1085,9 @@
 /* =================================== for iPad  pro======================== */
 @media (min-device-height: 1024px) and (max-device-width: 1366px) {
   .hero {
-
     padding: 200px 34px 120px 35px;
     background-size: 20vh;
     background-position-y: 340px;
-
   }
 
   .hero h1 {
@@ -1117,5 +1110,29 @@
 
   ul.link-container li.link-item a {
     font-size: 40px;
+  }
+}
+
+@media screen and  (min-width: 488px) {
+   .recent-works .work-card {
+    height: 299px;
+  }
+}
+
+@media screen and  (min-width: 364px) {
+   .recent-works .work-card {
+    height: 358px;
+  }
+}
+
+@media screen and  (min-width: 382px) {
+   .recent-works .work-card {
+    height: 348px;
+  }
+}
+
+@media screen and  (min-width: 389px) {
+   .recent-works .work-card {
+    height: 294px;
   }
 }
