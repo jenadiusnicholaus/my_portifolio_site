@@ -6,3 +6,11 @@ body {
 html {
   font-family: serif;
 }
+
+button {
+  padding: 12px;
+}
+
+.global-style {
+  background-color: #1c1a19;
+}
