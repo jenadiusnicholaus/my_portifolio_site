@@ -269,7 +269,7 @@
     font-style: normal;
     font-weight: normal;
     font-size: 24px;
-    line-height: 5vh;
+    line-height: vh;
     margin-top: 0;
     margin-bottom: 0;
   }
@@ -1052,9 +1052,13 @@
     font-size: 22.3px;
     line-height: 35px;
   }
+
+  .recent-works .work-card {
+    height: 358px;
+  }
 }
 
-@media screen and (min-device-width: 414px) {
+/* @media screen and (min-device-width: 414px) {
   .hero {
     height: 100%;
     padding: 120px 30px 90px 25px;
@@ -1066,7 +1070,10 @@
     font-size: 22.3px;
     line-height: 35px;
   }
-}
+  .recent-works .work-card {
+    height: 258px;
+  }
+} */
 
 @media screen and (min-width: 411px) and (max-device-width: 823px) {
   .hero {
@@ -1079,6 +1086,9 @@
   .hero p {
     font-size: 22.3px;
     line-height: 35px;
+  }
+  .recent-works .work-card {
+    height: 358px;
   }
 }
 
@@ -1115,24 +1125,13 @@
 
 @media screen and  (min-width: 488px) {
   .recent-works .work-card {
-    height: 299px;
+    height: 399px;
   }
 }
 
-@media screen and  (min-width: 364px) {
-  .recent-works .work-card {
-    height: 358px;
-  }
-}
 
-@media screen and  (min-width: 382px) {
+@media screen and  (min-width: 432px) {
   .recent-works .work-card {
-    height: 348px;
-  }
-}
-
-@media screen and  (min-width: 389px) {
-  .recent-works .work-card {
-    height: 294px;
+    height: 399px;
   }
 }
