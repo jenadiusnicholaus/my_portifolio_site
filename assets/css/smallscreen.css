@@ -982,7 +982,7 @@
 
 /* for the device with width lower than 360 */
 @media screen and (max-width: 360px) {
-   .hero {
+  .hero {
     height: 100%;
     padding: 120px 30px 90px 25px;
     background-size: 20.4vh;
@@ -1114,25 +1114,25 @@
 }
 
 @media screen and  (min-width: 488px) {
-   .recent-works .work-card {
+  .recent-works .work-card {
     height: 299px;
   }
 }
 
 @media screen and  (min-width: 364px) {
-   .recent-works .work-card {
+  .recent-works .work-card {
     height: 358px;
   }
 }
 
 @media screen and  (min-width: 382px) {
-   .recent-works .work-card {
+  .recent-works .work-card {
     height: 348px;
   }
 }
 
 @media screen and  (min-width: 389px) {
-   .recent-works .work-card {
+  .recent-works .work-card {
     height: 294px;
   }
 }
