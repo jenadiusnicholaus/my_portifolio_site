@@ -459,6 +459,7 @@
     font-size: 30px;
     line-height: 50px;
   }
+  
 }
 
 /* ======================= In wide tabs========================== */
@@ -952,6 +953,139 @@
     font-weight: normal;
     font-size: 30px;
     line-height: 50px;
+  }
+  
+  /* ===================== Contact form ========================= */
+  .get-in-touch {
+    padding: 124px 24px 0 24px;
+    display: grid;
+    justify-content: column;
+  }
+
+  .get-in-touch p {
+    color:  #172B4D;
+    font-family: Inter;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 32px;
+    line-height: 44px;
+    text-align: center;
+  }
+
+  .get-in-touch .input-control {
+    width: 100%;
+  }
+
+  .get-in-touch  input {
+    width: 100%;
+    box-sizing: border-box;
+    border: none;
+    border-bottom: 2px solid #dbd8d7;
+    margin-bottom: 39px;
+    border-width: 1px;
+    padding: 12px 20px;
+  }
+
+  .get-in-touch  input:hover {
+    border-bottom: 1px solid #ff6b00;
+  }
+
+  .get-in-touch  input:focus {
+    outline-color: #ff6b00;
+  }
+
+  input, textarea,
+  input::-webkit-input-placeholder {
+    font-family: Inter;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 24px;
+    color: #979493;
+  }
+
+  textarea,
+  ::-webkit-input-placeholder {
+    padding-top: 12px;
+    padding-left: 16px;
+  }
+ 
+  .get-in-touch textarea {
+    width: 100%;
+    box-sizing: border-box;
+    border: none;
+    background: #fbF8f7;
+  }
+
+  .get-in-touch-button {
+    display: flex;
+    justify-content: row;
+    align-content: space-around;
+    margin-top: 12px;
+    /* background-color: red; */
+    padding: 0 60px 0 92px;
+    /* width: 10vw; */
+  }
+
+  .get-in-touch-button .btn-get-in-touch {
+    border: 2px solid #ff6b00;
+  }
+
+  .get-in-touch-button .btn-get-in-touch {
+    width: 131px;
+    height: 48px;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 4vw;
+    line-height: 24px;
+    color: #fff;
+    background-color: #ff6b00;
+  }
+
+  .get-in-touch-button .btn-get-in-touch:hover {
+    background: #fff5e1;
+    border: 2px solid #ff6b00;
+    color: #ff6b00;
+  }
+
+  .get-in-touch-button .btn-get-in-touch:focus {
+    background-color: #ff6b00;
+    border: 2px solid #ff6b00;
+    color: #fff;
+  }
+
+  .footer {
+    margin-top: 124px;
+  }
+
+  .footer .footer-links .hr1 {
+   
+    border: 1px solid #dfe1e6;
+  }
+
+  .footer .footer-links .link-container {
+    padding-top: 0;
+    margin-top: 0;
+    padding-bottom: 0;
+    margin-bottom: 0;
+    border-color: #fff;
+    /* align-items: center; */
+    align-content: center;
+    margin-left: 94px;
+  }
+
+  .footer .footer-links .link-container .link-item .links {
+    color: #505F79;
+  }
+
+  .footer .footer-links .hr2 {
+    /* position: absolute; */
+    width: 134px;
+    height: 5px;
+    left: calc(50% - 134px/2 - 0.5px);
+    bottom: 8px;
+    background: #0D151E;
+    border-radius: 10px;
   }
 }
 
