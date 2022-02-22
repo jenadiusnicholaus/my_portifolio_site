@@ -459,7 +459,6 @@
     font-size: 30px;
     line-height: 50px;
   }
-  
 }
 
 /* ======================= In wide tabs========================== */
@@ -954,17 +953,16 @@
     font-size: 30px;
     line-height: 50px;
   }
-  
-  /* ===================== Contact form ========================= */
+
+  /* =========================== Conatact me ======================= */
   .get-in-touch {
     padding: 124px 24px 0 24px;
     display: grid;
-    justify-content: column;
+    flex-direction: column;
   }
 
   .get-in-touch p {
-    color:  #172B4D;
-    font-family: Inter;
+    color: #172b4d;
     font-style: normal;
     font-weight: bold;
     font-size: 32px;
@@ -976,7 +974,17 @@
     width: 100%;
   }
 
-  .get-in-touch  input {
+  input,
+  textarea,
+  input::-webkit-input-placeholder {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 24px;
+    color: #979493;
+  }
+
+  .get-in-touch input {
     width: 100%;
     box-sizing: border-box;
     border: none;
@@ -986,57 +994,45 @@
     padding: 12px 20px;
   }
 
-  .get-in-touch  input:hover {
+  .get-in-touch input:hover {
     border-bottom: 1px solid #ff6b00;
   }
 
-  .get-in-touch  input:focus {
+  .get-in-touch input:focus {
     outline-color: #ff6b00;
   }
 
-  input, textarea,
-  input::-webkit-input-placeholder {
-    font-family: Inter;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 16px;
-    line-height: 24px;
-    color: #979493;
-  }
-
   textarea,
-  ::-webkit-input-placeholder {
-    padding-top: 12px;
+  textarea::-webkit-input-placeholder {
+    padding-top: 10px;
     padding-left: 16px;
   }
- 
+
   .get-in-touch textarea {
     width: 100%;
     box-sizing: border-box;
     border: none;
-    background: #fbF8f7;
+    background: #fbf8f7;
+  }
+
+  .get-in-touch textarea:focus {
+    outline-color: #ff6b00;
   }
 
   .get-in-touch-button {
     display: flex;
-    justify-content: row;
-    align-content: space-around;
+    flex-direction: row;
+    justify-content: center;
     margin-top: 12px;
-    /* background-color: red; */
-    padding: 0 60px 0 92px;
-    /* width: 10vw; */
   }
 
   .get-in-touch-button .btn-get-in-touch {
     border: 2px solid #ff6b00;
-  }
-
-  .get-in-touch-button .btn-get-in-touch {
     width: 131px;
     height: 48px;
     font-style: normal;
     font-weight: bold;
-    font-size: 4vw;
+    font-size: 3vw;
     line-height: 24px;
     color: #fff;
     background-color: #ff6b00;
@@ -1059,7 +1055,6 @@
   }
 
   .footer .footer-links .hr1 {
-   
     border: 1px solid #dfe1e6;
   }
 
@@ -1069,22 +1064,20 @@
     padding-bottom: 0;
     margin-bottom: 0;
     border-color: #fff;
-    /* align-items: center; */
     align-content: center;
     margin-left: 94px;
   }
 
   .footer .footer-links .link-container .link-item .links {
-    color: #505F79;
+    color: #505f79;
   }
 
   .footer .footer-links .hr2 {
-    /* position: absolute; */
     width: 134px;
     height: 5px;
-    left: calc(50% - 134px/2 - 0.5px);
+    left: calc(50% - 134px / 2 - 0.5px);
     bottom: 8px;
-    background: #0D151E;
+    background: #0d151e;
     border-radius: 10px;
   }
 }
@@ -1210,24 +1203,6 @@
   }
 }
 
-@media screen and (min-width: 432px) {
-  .hero {
-    height: 100%;
-    padding: 140px 30px 100px 25px;
-    background-size: 24.4vh;
-    background-position-y: 290px;
-  }
-
-  .hero p {
-    font-size: 16.3px;
-    line-height: 24px;
-  }
-
-  .recent-works .work-card {
-    height: 298px;
-  }
-}
-
 /* =================================== for iPad  pro======================== */
 @media (min-device-height: 1024px) and (max-device-width: 1366px) {
   .hero {
@@ -1267,6 +1242,6 @@
 
 @media screen and  (min-width: 432px) {
   .recent-works .work-card {
-    height: 399px;
+    height: 310px;
   }
 }
