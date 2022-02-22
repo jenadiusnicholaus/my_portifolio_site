@@ -1176,15 +1176,15 @@
     color: #fff;
   }
 
-  .footer {
+  footer {
     margin-top: 124px;
   }
 
-  .footer .footer-links .hr1 {
+  footer .footer-links .hr1 {
     border: 1px solid #dfe1e6;
   }
 
-  .footer .footer-links .link-container {
+  footer .footer-links .link-container {
     padding-top: 0;
     margin-top: 0;
     padding-bottom: 0;
@@ -1194,11 +1194,11 @@
     margin-left: 94px;
   }
 
-  .footer .footer-links .link-container .link-item .links {
+  footer .footer-links .link-container .link-item .links {
     color: #505f79;
   }
 
-  .footer .footer-links .hr2 {
+  footer .footer-links .hr2 {
     width: 134px;
     height: 5px;
     left: calc(50% - 134px / 2 - 0.5px);
