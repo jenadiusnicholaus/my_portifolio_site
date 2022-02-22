@@ -1076,6 +1076,24 @@
   }
 }
 
+@media screen and (min-width: 432px) {
+  .hero {
+    height: 100%;
+    padding: 140px 30px 100px 25px;
+    background-size: 24.4vh;
+    background-position-y: 290px;
+  }
+
+  .hero p {
+    font-size: 16.3px;
+    line-height: 24px;
+  }
+
+  .recent-works .work-card {
+    height: 298px;
+  }
+}
+
 /* =================================== for iPad  pro======================== */
 @media (min-device-height: 1024px) and (max-device-width: 1366px) {
   .hero {
