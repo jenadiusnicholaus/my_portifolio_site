@@ -653,6 +653,10 @@
     padding-top: 20px;
   }
 
+  .hamburger ul.menu {
+    display: none;
+  }
+
   .hamburger .icon {
     height: 10px;
     color: #dbd8d7;

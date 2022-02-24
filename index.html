@@ -18,6 +18,12 @@
               <a href="#" class="logo">My Logo</a>
             </div>
             <div class="hamburger">
+                <ul class="menu">
+                    <li class="menu-item"><a class="menu-link" href="#">Portifolio</a></li>
+                    <li class="menu-item"><a class="menu-link" href="#">About</a> </li>
+                    <li class="menu-item"><a class="menu-link" href="#"></a>Contact</a></li>
+                    <li class="menu-item"><a class="menu-link" href="#"></a> <i class="fa-solid fa-envelope"></i></a></li>
+                </ul>
                 <a href="#" class="icon">
                     <i class="fa-solid fa-bars"></i>
                 </a>
@@ -26,13 +32,15 @@
     </header>
         <!-- end of header -->
         <!-- landing page -->
-    <div class="">
+    
         <section class="hero">
-            <h1> Hey There.<br>I'm Jenadius </h1>
-            <h5 >I'm a Software Developer.</h5>
-            <p>I can help you build a product , feature or website Look through some of my work and experience! If you like what you
-            see and have a project you need coded,
-            don't hestiate to contact me.</p>
+            <div class="description">
+                <h1> Hey There.<br>I'm Jenadius </h1>
+                <h5 >I'm a Software Developer.</h5>
+                <p>I can help you build a product , feature or website Look through some of my work and experience! If you like what you
+                see and have a project you need coded,
+                don't hestiate to contact me.</p>
+            </div>
             <ul class="link-container">
                 <li class="link-item"><a href="#" class="links"><i class="fa-brands fa-github"></i></a></li>
                 <li class="link-item"><a href="#" class="links"><i class="fa-brands fa-linkedin-in"></i></a></li>
@@ -40,30 +48,37 @@
                 <li class="link-item"><a href="#" class="links"><i class="fa-brands fa-facebook-f"></i></a></li>
                 <li class="link-item"><a href="#" class="links"><i class="fa-brands fa-reddit-alien"></i></a></li>
             </ul>
+            <div class="">
+
+            </div>
         </section>
         <!-- end of landing page -->
 
-    <!-- main -->
+        <!-- main -->
         <section class="main">
             <div id="recent-work" class="recent-work">
                 <h3 class="title">My Recent Works</h3>
                 <hr class="recent-work-line"/>
             </div>
             <div class="image-placeholder">
-                <img class="image" src="assets/img/imageplaceholder.png" alt="">
-                <h3>Multi-Post Stories</h3>
-                <p>A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry's standard
-                dummy text ever since the 1500s, when an unknown printer took a standard dummy text.</p>
-                <div class="teck-stacks">
-                    <ul class="ul-teck-stacks">
-                        <li class = "teck-stacks-item"><button type="button" class="btn-tech-stacks">css </button></li>
-                        <li class = "teck-stacks-item"><button type="button" class="btn-tech-stacks">html </button></li>
-                        <li class = "teck-stacks-item"><button type="button" class="btn-tech-stacks">Bootstrap </button></li>
-                        <li class = "teck-stacks-item"><button type="button" class="btn-tech-stacks">Ruby </button></li>
-                    </ul>
+                <div class="image-part">
+                    <img class="image" src="assets/img/imageplaceholder.png" alt="">
                 </div>
-                <div class="btn-see-project">
-                    <button type="button" class="btn">See Project </button>
+                <div class="description-part">
+                    <h3>Multi-Post Stories</h3>
+                    <p>A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry's standard
+                    dummy text ever since the 1500s, when an unknown printer took a standard dummy text.</p>
+                    <div class="teck-stacks">
+                        <ul class="ul-teck-stacks">
+                            <li class = "teck-stacks-item"><button type="button" class="btn-tech-stacks">css </button></li>
+                            <li class = "teck-stacks-item"><button type="button" class="btn-tech-stacks">html </button></li>
+                            <li class = "teck-stacks-item"><button type="button" class="btn-tech-stacks">Bootstrap </button></li>
+                            <li class = "teck-stacks-item"><button type="button" class="btn-tech-stacks">Ruby </button></li>
+                        </ul>
+                    </div>
+                    <div class="btn-see-project">
+                        <button type="button" class="btn">See Project </button>
+                    </div>
                 </div>
             </div>
 
@@ -241,12 +256,15 @@
         <!-- About me -->
         <section id="about-me" class="about-me ">
             <div class="intro">
-                <h1>About me</h1>
-                <p>Hello I'm a software developer! I can help you build a product , feature or website Look through some of my work
-                    and
-                    experience! If you like what you see and have a project you need coded, don’t hestiate to contact me.
-                </p>
-                <button class="btn-get-my-resume" type="button">Get my resume</button>
+                <div class="desc">
+                    <h1>About me</h1>
+                    <p>Hello I'm a software developer! I can help you build a product , feature or website Look through some of my work
+                        and
+                        experience! If you like what you see and have a project you need coded, don’t hestiate to contact me.
+                    </p>
+                    <button class="btn-get-my-resume" type="button">Get my resume</button>
+                </div>
+               
             </div>
             <br>
             <hr class="about-me-line"/>
@@ -295,25 +313,29 @@
         </section>
         <!-- end of about -->
         <section  class="get-in-touch">
-            <h3 hidden>heading</h3>
-            <p>I'm always interested in hearing about new projects, so if you'd like to chat please get in touch.
-            </p>
-            <form action="https://formspree.io/f/xlezbvrz" method="POST">
-                <div class="input-control">
-                    <input maxlength="30" class="fullname-control" type="text" name="full-name" id="full-name" placeholder="Full name" required>
-                </div>
-                <div class="input-control">
-                    <input class="emaol-control" type="email" id="email" name="email-address" placeholder="Email address" required>
-                </div>
-                <div class="input-control">
-                    <textarea name="content" id="contents" maxlength="500"   rows="4" placeholder="Enter text here" required></textarea>
-                </div>
-                <div class="get-in-touch-button">
-                    <div hidden></div>
-                <button  class="btn-get-in-touch" type="submit">Get in touch</button>
-                    <div hidden></div>
-                </div>
-            </form>
+            <div class="get-in-touch-desc">
+                <h6 hidden>heading</h6>
+                <p>I'm always interested in hearing about new projects, so if you'd like to chat please get in touch.
+                </p>
+            </div>
+            <div class="get-in-touch-form">
+                <form action="https://formspree.io/f/xlezbvrz" method="POST">
+                    <div class="input-control">
+                        <input maxlength="30" class="fullname-control" type="text" name="full-name" id="full-name" placeholder="Full name" required>
+                    </div>
+                    <div class="input-control">
+                        <input class="emaol-control" type="email" id="email" name="email-address" placeholder="Email address" required>
+                    </div>
+                    <div class="input-control">
+                        <textarea name="content" id="contents" maxlength="500"   rows="4" placeholder="Enter text here" required></textarea>
+                    </div>
+                    <div class="get-in-touch-button">
+                        <div class="divider" hidden></div>
+                    <button  class="btn-get-in-touch" type="submit">Get in touch</button>
+                        <div hidden></div>
+                    </div>
+                </form>
+            </div>
         </section>
 
         <footer>
@@ -330,7 +352,6 @@
                 <hr class="hr2">
                 </div>
         </footer>
-    </div>
    <!-- end container -->
 </body>
 </html>
