@@ -178,7 +178,7 @@ body {
     display: flex;
     flex-direction: row;
   }
-  
+
   .image-placeholder .image-part img {
     width: 40vw;
     height: 50vh;
@@ -187,15 +187,14 @@ body {
   .image-placeholder .description-part {
     margin-left: 24px;
   }
- 
 
   .image-placeholder .description-part h3 {
-    margin-bottom:  24px;
+    margin-bottom: 24px;
     margin-top: 0;
     font-size: 44px;
     line-height: 52px;
     font-weight: normal;
-    color:  #091e42;
+    color: #091e42;
   }
 
   .image-placeholder .description-part p {
@@ -236,10 +235,8 @@ body {
     margin-right: 12px;
     font-style: normal;
     font-weight: normal;
-    /* font-size: 4vw; */
   }
 
-  /* Todo  */
   .image-placeholder .description-part .btn-see-project {
     margin-top: 12px;
     height: 100px;
@@ -249,7 +246,6 @@ body {
     background-color: #ff6b00;
     position: static;
     width: 10.9vw;
-    /* height: 7vh; */
     left: 0;
     padding: 12px;
     border: 1px #ff6b00;
@@ -306,7 +302,7 @@ body {
     margin-bottom: 20px;
   }
 
-  .work-card-body p {
+  .work-card-body p.wprk-description {
     color: #fff;
     font-style: normal;
     font-weight: normal;
@@ -371,7 +367,7 @@ body {
     color: #fff;
   }
 
-   .about-me {
+  .about-me {
     display: flex;
     flex-direction: column;
     background-color: #1c1a19;
@@ -401,7 +397,7 @@ body {
     margin-bottom: 0;
   }
 
-  .about-me p {
+  .about-me p.desc {
     font-style: normal;
     font-weight: normal;
     font-size: 20px;
@@ -512,14 +508,15 @@ body {
 
   .get-in-touch .get-in-touch-desc {
     width: 455px;
-    margin-right:  24px;
+    margin-right: 24px;
     padding-top: 0;
   }
+
   .get-in-touch .get-in-touch-form {
     width: 684px;
   }
 
-  .get-in-touch p {
+  .get-in-touch p.get-in-touch-desc {
     padding-top: 0;
     color: #172b4d;
     font-style: normal;
@@ -583,10 +580,6 @@ body {
     justify-content: center;
     margin-top: 12px;
   }
-  
-  /* .get-in-touch-button .divider {
-    wi
-  } */
 
   .get-in-touch-button .btn-get-in-touch {
     border: 2px solid #ff6b00;
@@ -631,7 +624,6 @@ body {
     margin-bottom: 0;
     border-color: #fff;
     align-content: center;
-   
   }
 
   footer .footer-links .link-container .link-item {
