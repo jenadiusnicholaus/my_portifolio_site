@@ -382,10 +382,6 @@ body {
     height: 652px;
   }
 
-  .about-me .desc {
-    width: 566px;
-  }
-
   .about-me h1 {
     padding-top: 120px;
     color: #ff6b00;
@@ -397,7 +393,8 @@ body {
     margin-bottom: 0;
   }
 
-  .about-me p.desc {
+  .about-me .desc {
+    width: 566px;
     font-style: normal;
     font-weight: normal;
     font-size: 20px;
@@ -506,17 +503,13 @@ body {
     flex-direction: row;
   }
 
-  .get-in-touch .get-in-touch-desc {
-    width: 455px;
-    margin-right: 24px;
-    padding-top: 0;
-  }
-
   .get-in-touch .get-in-touch-form {
     width: 684px;
   }
 
-  .get-in-touch p.get-in-touch-desc {
+  .get-in-touch .get-in-touch-desc {
+    width: 455px;
+    margin-right: 24px;
     padding-top: 0;
     color: #172b4d;
     font-style: normal;
