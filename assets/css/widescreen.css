@@ -496,6 +496,7 @@ body {
     padding: 130px 142px 0 142px;
     display: flex;
     flex-direction: row;
+    justify-content: space-around;
   }
 
   .get-in-touch .get-in-touch-form {
@@ -667,10 +668,6 @@ body {
     margin-bottom: 24px;
   }
 
-  .get-in-touch .get-in-touch-form {
-    width: 100vw;
-  }
-
   .about-me .desc {
     width: 767px;
   }
@@ -680,10 +677,6 @@ body {
     font-size: 24px;
     padding: 17px;
     height: 90px;
-  }
-
-  .get-in-touch .get-in-touch-desc {
-    width: 1378px;
   }
 
   .work-card-body h1 {
