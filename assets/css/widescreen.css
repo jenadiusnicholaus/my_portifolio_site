@@ -185,6 +185,10 @@ body {
     height: 50vh;
   }
 
+  .image-placeholder .image-part img:hover {
+    transform: scale(1.1);
+  }
+
   .image-placeholder .description-part {
     margin-left: 24px;
   }
@@ -497,6 +501,10 @@ body {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
+  }
+
+  .get-in-touch p:hover {
+    transform: translate(10px);
   }
 
   .get-in-touch .get-in-touch-form {
