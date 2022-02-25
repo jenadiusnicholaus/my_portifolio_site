@@ -23,7 +23,14 @@ body {
 
   .brand {
     margin-left: 154px;
+    animation: rotateZ 10s;
   }
+
+  @keyframes rotateZ {
+    to {
+      transform: rotateZ(-3240deg);
+    }
+  }  
 
   .brand .logo {
     font-weight: bold;
