@@ -2,7 +2,7 @@ body {
   margin: 0;
 }
 
-@media screen and (min-width: 604px) {
+@media screen and (min-width: 992px) {
   header {
     height: 4.7%;
     width: 100%;
@@ -81,8 +81,8 @@ body {
     background-image: url("../img/Illustration-header.png");
   }
 
-  .description {
-    padding-right: 566px;
+  .hero .description {
+    padding-right: 40vw;
     margin: 80px 0 251px 0;
   }
 
@@ -112,10 +112,11 @@ body {
     line-height: 32px;
   }
 
-  .hero .link-container {
-    margin-left: 36px;
+  .link-container {
+    margin-right: 87px;
+    width: 80px;
+    padding: 10px;
     margin-top: 150px;
-    margin-right: 89.01px;
     color: #fff;
     display: flex;
     flex-direction: column;
@@ -199,7 +200,7 @@ body {
 
   .image-placeholder .description-part p {
     padding-top: 3px;
-    font-size: 20px;
+    font-size: 22px;
     line-height: 28px;
     color: #091e42;
     margin-top: 12px;
@@ -223,29 +224,29 @@ body {
     list-style: none;
     font-style: normal;
     font-weight: bold;
-    font-size: 15px;
     line-height: 20px;
     margin-right: 1vw;
   }
 
   .teck-stacks-item .btn-tech-stacks {
+    font-size: 18px;
     background-color: #fff;
     border: 1px solid #8993a4;
-    padding: 1.5vh 1vw 12px 1vw;
-    margin-right: 12px;
+    padding: 1.5vh 1.5vw 12px 1.5vw;
+    margin-right: 7px;
     font-style: normal;
     font-weight: normal;
   }
 
   .image-placeholder .description-part .btn-see-project {
-    margin-top: 12px;
+    margin-top: 27px;
     height: 100px;
   }
 
   .image-placeholder .description-part .btn-see-project button {
     background-color: #ff6b00;
     position: static;
-    width: 10.9vw;
+    width: 8.9vw;
     left: 0;
     padding: 12px;
     border: 1px #ff6b00;
@@ -295,7 +296,6 @@ body {
     font-style: normal;
     font-weight: normal;
     font-size: 32px;
-    line-height: 2px;
     line-height: 44px;
     padding-top: 100px;
     color: #fff;
@@ -339,11 +339,9 @@ body {
   .card-container .work-card-footer {
     width: 100%;
     height: 50px;
-    background-color: red;
   }
 
   .card-container .work-card-footer button.footer-btn {
-    /* flex: 1; */
     width: inherit;
     background-color: #ff6b00;
     height: 48px;
@@ -455,10 +453,10 @@ body {
   .language,
   .frameworks,
   .skils {
-    margin-right: 176px;
+    margin-right: 10vw;
     display: flex;
     flex-direction: column;
-    align-items: stretch;
+    align-items: start;
   }
 
   .language-title,
@@ -508,9 +506,14 @@ body {
   }
 
   .get-in-touch .get-in-touch-desc {
-    width: 455px;
+    width: 655px;
     margin-right: 24px;
+    align-items: stretch;
+  }
+
+  .get-in-touch .get-in-touch-desc p {
     padding-top: 0;
+    align-items: start;
     color: #172b4d;
     font-style: normal;
     font-weight: bold;
@@ -608,7 +611,7 @@ body {
   }
 
   footer .footer-links .link-container {
-    margin-left: 411px;
+    margin-left: calc(52% - 134px / 2 - 0.5px);
     display: flex;
     flex-direction: row;
     padding-top: 0;
@@ -634,5 +637,79 @@ body {
     bottom: 8px;
     background: #0d151e;
     border-radius: 10px;
+  }
+}
+
+@media screen and  (min-width: 992px) {
+  .image-placeholder .description-part .btn-see-project button {
+    width: 15.9vw;
+    padding: 17px;
+    font-size: 2vw;
+  }
+}
+
+@media screen and (min-width: 1398px) {
+  .language,
+  .frameworks,
+  .skils {
+    margin-right: 15vw;
+  }
+}
+
+@media screen and (min-width: 2091px) {
+  .hero .link-container {
+    padding-left: 40px;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .image-placeholder .description-part .btn-see-project button {
+    width: 9.9vw;
+    padding: 17px;
+    font-size: 1vw;
+  }
+
+  .image-placeholder .description-part p {
+    padding-top: 3px;
+    font-size: 26px;
+    line-height: 28px;
+    margin-top: 12px;
+    margin-bottom: 24px;
+  }
+
+  .get-in-touch .get-in-touch-form {
+    width: 100vw;
+  }
+
+  .language,
+  .frameworks,
+  .skils {
+    margin-right: 22vw;
+  }
+
+  .about-me .desc {
+    width: 767px;
+  }
+
+  .about-me button.btn-get-my-resume {
+    width: 240px;
+    font-size: 24px;
+    padding: 17px;
+    height: 90px;
+  }
+
+  .get-in-touch .get-in-touch-desc {
+    width: 1378px;
+  }
+
+  .work-card-body h1 {
+    padding-top: 140px;
+    font-size: 42px;
+  }
+
+  .work-card-body p.wprk-description {
+    font-size: 20px;
+    line-height: 34px;
   }
 }
