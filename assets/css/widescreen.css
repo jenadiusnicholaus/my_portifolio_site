@@ -434,8 +434,7 @@ body {
   .tech-stacks-and-skils {
     display: flex;
     flex-direction: row;
-    padding: 0;
-    padding-top: 120px;
+    justify-content: space-between;
   }
 
   .tech-stacks-and-skils h1 {
@@ -453,7 +452,6 @@ body {
   .language,
   .frameworks,
   .skils {
-    margin-right: 10vw;
     display: flex;
     flex-direction: column;
     align-items: start;
@@ -480,7 +478,6 @@ body {
   ul {
     display: flex;
     flex-direction: column;
-    margin-top: 20px;
   }
 
   .language,
@@ -648,14 +645,6 @@ body {
   }
 }
 
-@media screen and (min-width: 1398px) {
-  .language,
-  .frameworks,
-  .skils {
-    margin-right: 15vw;
-  }
-}
-
 @media screen and (min-width: 2091px) {
   .hero .link-container {
     padding-left: 40px;
@@ -680,12 +669,6 @@ body {
 
   .get-in-touch .get-in-touch-form {
     width: 100vw;
-  }
-
-  .language,
-  .frameworks,
-  .skils {
-    margin-right: 22vw;
   }
 
   .about-me .desc {
