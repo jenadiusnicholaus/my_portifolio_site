@@ -30,7 +30,7 @@ body {
     to {
       transform: rotateZ(-3240deg);
     }
-  }  
+  }
 
   .brand .logo {
     font-weight: bold;
@@ -265,6 +265,7 @@ body {
     font-weight: bold;
     font-size: 1vw;
     color: #fff;
+    transition: 0.3s;
   }
 
   .image-placeholder .description-part .btn-see-project button:hover {
@@ -362,6 +363,7 @@ body {
     line-height: 24px;
     border: 0 #ff6b00;
     color: #fff;
+    transition: 0.3s;
   }
 
   .card-container .work-card-footer button.footer-btn:hover {
@@ -421,6 +423,7 @@ body {
     padding: 12px;
     color: #fff;
     background-color: #ff6b00;
+    transition: 0.3s;
   }
 
   .about-me button.btn-get-my-resume:hover {
@@ -600,6 +603,7 @@ body {
     line-height: 24px;
     color: #fff;
     background-color: #ff6b00;
+    transition: 0.3s;
   }
 
   .get-in-touch-button .btn-get-in-touch:hover {

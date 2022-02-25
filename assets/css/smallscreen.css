@@ -230,6 +230,7 @@
     font-weight: bold;
     font-size: 25px;
     color: #fff;
+    transition: 0.3s;
   }
 
   .image-placeholder .btn-see-project button:hover {
