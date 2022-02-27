@@ -314,7 +314,7 @@ body {
     margin-bottom: 20px;
   }
 
-  .work-card-body p.wprk-description {
+  .work-card-body .work-description {
     color: #fff;
     font-style: normal;
     font-weight: normal;
