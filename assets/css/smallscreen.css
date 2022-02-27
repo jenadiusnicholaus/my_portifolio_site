@@ -177,6 +177,10 @@
     width: 92vw;
   }
 
+  .image-placeholder .image-part img:hover {
+    transform: scale(1.1);
+  }
+
   .image-placeholder .teck-stacks {
     margin-top: 0;
     padding: 0;
@@ -226,6 +230,7 @@
     font-weight: bold;
     font-size: 25px;
     color: #fff;
+    transition: 0.3s;
   }
 
   .image-placeholder .btn-see-project button:hover {
@@ -427,7 +432,7 @@
   .skils {
     display: flex;
     flex-direction: column;
-    align-items: stretch;
+    align-items: center;
   }
 
   .language-title,
@@ -451,6 +456,7 @@
   ul {
     display: flex;
     flex-direction: column;
+    align-items: center;
   }
 
   .language,
@@ -478,6 +484,10 @@
     font-size: 32px;
     line-height: 44px;
     text-align: center;
+  }
+
+  .get-in-touch p:hover {
+    transform: translate(10px);
   }
 
   .get-in-touch .input-control {
@@ -805,6 +815,10 @@
     height: 40vh;
   }
 
+  .image-placeholder .image-part img:hover {
+    transform: scale(1.9);
+  }
+
   .image-placeholder h3 {
     font-size: 9vw;
     margin-top: 2vh;
@@ -1128,6 +1142,10 @@
     font-weight: bold;
     font-size: 32px;
     line-height: 44px;
+  }
+
+  .get-in-touch p:hover {
+    transform: translate(10px);
   }
 
   .get-in-touch .input-control {

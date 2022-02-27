@@ -23,6 +23,13 @@ body {
 
   .brand {
     margin-left: 154px;
+    animation: rotateZ 10s;
+  }
+
+  @keyframes rotateZ {
+    to {
+      transform: rotateZ(-3240deg);
+    }
   }
 
   .brand .logo {
@@ -185,6 +192,10 @@ body {
     height: 50vh;
   }
 
+  .image-placeholder .image-part img:hover {
+    transform: scale(1.1);
+  }
+
   .image-placeholder .description-part {
     margin-left: 24px;
   }
@@ -254,6 +265,7 @@ body {
     font-weight: bold;
     font-size: 1vw;
     color: #fff;
+    transition: 0.3s;
   }
 
   .image-placeholder .description-part .btn-see-project button:hover {
@@ -302,7 +314,7 @@ body {
     margin-bottom: 20px;
   }
 
-  .work-card-body p.wprk-description {
+  .work-card-body .work-description {
     color: #fff;
     font-style: normal;
     font-weight: normal;
@@ -351,6 +363,7 @@ body {
     line-height: 24px;
     border: 0 #ff6b00;
     color: #fff;
+    transition: 0.3s;
   }
 
   .card-container .work-card-footer button.footer-btn:hover {
@@ -410,6 +423,7 @@ body {
     padding: 12px;
     color: #fff;
     background-color: #ff6b00;
+    transition: 0.3s;
   }
 
   .about-me button.btn-get-my-resume:hover {
@@ -499,6 +513,10 @@ body {
     justify-content: space-around;
   }
 
+  .get-in-touch p:hover {
+    transform: translate(10px);
+  }
+
   .get-in-touch .get-in-touch-form {
     width: 684px;
   }
@@ -585,6 +603,7 @@ body {
     line-height: 24px;
     color: #fff;
     background-color: #ff6b00;
+    transition: 0.3s;
   }
 
   .get-in-touch-button .btn-get-in-touch:hover {
