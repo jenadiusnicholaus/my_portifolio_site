@@ -725,3 +725,12 @@ body {
     border: 1px solid #212121;
   }
 }
+
+@media screen and (min-width: 1366px) {
+  .recent-work h3.title {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 40px;
+    margin-right: 24px;
+  }
+}
