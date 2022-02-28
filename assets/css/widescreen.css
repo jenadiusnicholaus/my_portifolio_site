@@ -165,11 +165,11 @@ body {
     margin-bottom: 70px;
   }
 
-  .recent-work .title {
+  .recent-work h3.title {
     font-style: normal;
     font-weight: normal;
     font-size: 40px;
-    width: 325px;
+    width: 335px;
     margin-right: 24px;
   }
 
