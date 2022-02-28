@@ -162,6 +162,7 @@ body {
     margin-top: 0;
     display: flex;
     flex-direction: row;
+    justify-content: space-around;
     margin-bottom: 70px;
   }
 
@@ -169,15 +170,14 @@ body {
     font-style: normal;
     font-weight: normal;
     font-size: 40px;
-    width: 335px;
     margin-right: 24px;
   }
 
   .recent-work hr.recent-work-line {
-    width: 57vw;
+    width: 360px;
     margin-top: 63px;
     height: 0;
-    left: 339px;
+    left: 450px;
     border: 1px solid #212121;
   }
 
@@ -706,5 +706,22 @@ body {
   .work-card-body p.wprk-description {
     font-size: 20px;
     line-height: 34px;
+  }
+}
+
+@media screen and (min-width: 1312px) {
+  .recent-work h3.title {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 50px;
+    margin-right: 24px;
+  }
+
+  .recent-work hr.recent-work-line {
+    width: 50vw;
+    margin-top: 63px;
+    height: 0;
+    left: 339px;
+    border: 1px solid #212121;
   }
 }
