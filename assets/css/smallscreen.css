@@ -222,7 +222,6 @@
     background-color: #ff6b00;
     position: static;
     width: 30.9vw;
-    height: 9vh;
     left: 0;
     padding: 12px;
     border: 1px #ff6b00;
@@ -873,16 +872,14 @@
   /* Todo  */
   .image-placeholder .btn-see-project {
     height: 80px;
-    margin-top: 12px;
   }
 
   .image-placeholder .btn-see-project button {
     background-color: #ff6b00;
     position: static;
     width: 34.9vw;
-    height: 7vh;
     left: 0;
-    padding-top: 12px;
+    padding: 12px;
     border: 1px #ff6b00;
     font-style: normal;
     font-weight: bold;
@@ -1287,16 +1284,15 @@
 
 /* for the device with width lower than 360 */
 @media screen and (max-width: 360px) {
+  .btn-see-project {
+    background-color: #3d6da5;
+  }
+
   .hero {
     height: 100%;
     padding: 120px 30px 90px 25px;
     background-size: 20.4vh;
     background-position-y: 270px;
-  }
-
-  .image-placeholder .teck-stacks {
-    margin-top: 12px;
-    padding-bottom: 12px;
   }
 
   .recent-works .work-card {
@@ -1306,11 +1302,6 @@
 }
 
 @media screen and (max-width: 375px) {
-  .image-placeholder .teck-stacks {
-    margin-top: 12px;
-    margin-bottom: 0;
-  }
-
   .recent-works .work-card {
     height: 348px;
   }
@@ -1341,6 +1332,13 @@
 
   .hero p {
     font-size: 24.3px;
+  }
+}
+
+/* in very smallest device */
+@media screen and (max-width: 261px) {
+  .recent-work .title {
+    font-size: 20px;
   }
 }
 
