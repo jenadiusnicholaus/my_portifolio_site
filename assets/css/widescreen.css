@@ -166,15 +166,15 @@ body {
     margin-bottom: 70px;
   }
 
-  .recent-work h3.title {
+  .recent-work .title {
     font-style: normal;
     font-weight: normal;
-    font-size: 40px;
+    font-size: 50px;
     margin-right: 24px;
   }
 
   .recent-work hr.recent-work-line {
-    width: 360px;
+    width: 30vw;
     margin-top: 63px;
     height: 0;
     left: 450px;
@@ -665,7 +665,7 @@ body {
   }
 }
 
-@media screen and (min-width: 2091px) {
+@media screen and (min-width: 2000px) {
   .hero .link-container {
     padding-left: 40px;
     color: #fff;
@@ -691,6 +691,14 @@ body {
     width: 767px;
   }
 
+  .recent-work .title {
+    font-size: 50px;
+  }
+
+  .recent-work hr.recent-work-line {
+    width: 60vw;
+  }
+
   .about-me button.btn-get-my-resume {
     width: 240px;
     font-size: 24px;
@@ -709,28 +717,12 @@ body {
   }
 }
 
-@media screen and (min-width: 1312px) {
-  .recent-work h3.title {
-    font-style: normal;
-    font-weight: normal;
-    font-size: 50px;
-    margin-right: 24px;
+@media screen and (min-width: 1000px) {
+  .recent-work .title {
+    font-size: 40px;
   }
 
   .recent-work hr.recent-work-line {
-    width: 50vw;
-    margin-top: 63px;
-    height: 0;
-    left: 339px;
-    border: 1px solid #212121;
-  }
-}
-
-@media screen and (min-width: 1366px) {
-  .recent-work h3.title {
-    font-style: normal;
-    font-weight: normal;
-    font-size: 40px;
-    margin-right: 24px;
+    width: 40vw;
   }
 }
