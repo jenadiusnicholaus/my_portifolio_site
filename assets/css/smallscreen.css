@@ -71,7 +71,7 @@ nav {
   display: none;
   position: absolute;
   background-color: #3c3a39;
-  top: 40px;
+  top: 30px;
   left: 0;
   height: calc(95vh - 50px);
   width: 100%;
@@ -112,7 +112,7 @@ nav {
   }
 
   .mobile-icon-menu {
-    top: 50px;
+    top: 30px;
   }
 
   .open .mobile-icon-menu {
@@ -1331,7 +1331,7 @@ nav {
 
 @media screen and (max-width: 375px) {
   .mobile-icon-menu {
-    top: 30px;
+    top: 20px;
   }
 
   .recent-works .work-card {
