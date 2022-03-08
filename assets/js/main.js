@@ -1,5 +1,10 @@
-function main() {
-  console('testing env');
-}
+const logoToggleClass = (element, toggleClass) => {
+  element.classList.toggle(toggleClass);
+};
 
-main();
+document.querySelectorAll('.hamburger-mobile-icon').forEach((hamburgIcon) => {
+  hamburgIcon.addEventListener('click', () => {
+    hamburgIcon.classList.toggle('open');
+    logoToggleClass(document.querySelector('.logo'), 'dark-logo');
+  });
+});
