@@ -71,7 +71,7 @@ body {
 
   .hero .description {
     padding-right: 40vw;
-    margin: 80px 0 251px 0;
+    margin: 10px 0 251px 0;
   }
 
   .description h1 {
@@ -104,7 +104,7 @@ body {
     margin-right: 87px;
     width: 80px;
     padding: 10px;
-    margin-top: 150px;
+    margin-top: 70px;
     color: #fff;
     display: flex;
     flex-direction: column;
