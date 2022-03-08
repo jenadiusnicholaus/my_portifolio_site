@@ -1,6 +1,6 @@
 /* Mobile menu css */
 .hamburger-mobile-icon {
-  display: none;
+  display: block;
   margin: auto 0;
   cursor: pointer;
 }
@@ -36,13 +36,13 @@
   flex-direction: column;
   align-items: start;
   justify-content: flex-start;
-  width: 100%;
+  width: 80%;
   padding: 0 64px 0 24px;
 }
 
 .mobile-icon-menu {
   display: none; 
-  background: #3c3a39;
+  background-color: red;
   position: absolute;
   top: 40px;
   left: 0;
