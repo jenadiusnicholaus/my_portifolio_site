@@ -34,14 +34,9 @@ nav {
   color: #3c3a39;
 }
 
-.hamburger ul.menu {
-  display: none;
-}
-
-
 /* Mobile menu css */
 .hamburger-mobile-icon {
-  display: block;
+  display: none;
   margin: auto 0;
   cursor: pointer;
 }
@@ -91,14 +86,14 @@ nav {
   padding: 0 64px 0 24px;
 }
 
-.mobile-icon-menu hr {
-  width: 100%;
-  border: 1px solid #6f6c6b;
-}
-
 .mobile-icon-menu .mobile-menu-item {
+  width: 100%;
   margin-bottom: 10px;
   text-decoration: none;
+}
+
+.mobile-icon-menu .mobile-menu-item hr {
+  border: 1px solid #6f6c6b;
 }
 
 .mobile-icon-menu .mobile-menu-item .mobile-menu-link {
@@ -111,9 +106,21 @@ nav {
 }
 
 /* =============================For Tablet View========================== */
-@media screen and (min-device-width: 604px) {
+@media screen and (min-device-width: 605px) {
   .hamburger-mobile-icon {
     display: block;
+  }
+
+  .mobile-icon-menu {
+    top: 50px;
+  }
+
+  .open .mobile-icon-menu {
+    width: 90%;
+  }
+
+  .hamburger ul.menu {
+    display: none;
   }
 
   .hero {
@@ -717,6 +724,10 @@ nav {
 
 /* ========================= For Mobile portrait View ======================== */
 @media screen and (max-width: 604px) {
+  .hamburger ul.menu {
+    display: none;
+  }
+
   .hamburger-mobile-icon {
     display: block;
   }

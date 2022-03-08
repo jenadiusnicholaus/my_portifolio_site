@@ -3,24 +3,6 @@ body {
 }
 
 @media screen and (min-width: 992px) {
-  header {
-    height: 4.7%;
-    width: 100%;
-    position: fixed;
-    top: 0;
-  }
-
-  header nav {
-    background-color: #3c3a39;
-    width: 100%;
-    position: fixed;
-    top: 0;
-    flex-direction: row;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-  }
-
   .brand {
     margin-left: 154px;
     animation: rotateZ 10s;
@@ -45,11 +27,14 @@ body {
     padding-top: 0;
   }
 
-  header nav .hamburger ul.menu {
-    margin-right: 156px;
+  .hamburger ul.menu {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+  }
+
+  .hamburger-mobile-icon {
+    display: none;
   }
 
   header nav .hamburger ul.menu li.menu-item {
@@ -68,10 +53,6 @@ body {
     list-style-type: none;
     color: #fff;
     text-decoration: none;
-  }
-
-  .hamburger .icon {
-    display: none;
   }
 
   .hero {
