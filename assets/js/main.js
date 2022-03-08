@@ -1,5 +1,12 @@
-function main() {
-  console('testing env');
+
+var logoToggleClass = function(element, toggleClass) {
+  element.classList.toggle(toggleClass);
 }
 
-main();
+function toggleMobileMenu(menu) {
+  menu.classList.toggle('open');
+  logoToggleClass(document.querySelector('.logo'), 'dark-logo')
+}
+
+
+

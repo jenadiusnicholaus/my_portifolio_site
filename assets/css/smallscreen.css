@@ -1,3 +1,74 @@
+/* Mobile menu css */
+.hamburger-mobile-icon {
+  display: none;
+  margin: auto 0;
+  cursor: pointer;
+}
+
+.hamburger-mobile-icon div {
+  width: 17px;
+  height: 3px;
+  background-color: #acb7c3;
+  margin: 3px 0;
+  transition: 0.4s;
+}
+
+.open .bar1 {
+  -webkit-transform:  rotate(-45deg) translate(-6px, 6px);
+  transform: rotate(-45deg) translate(-6px, 6px);
+  width: 20px;
+  margin: 6px 0;
+}
+
+.open .bar2 {
+   opacity: 0;
+ }
+
+.open .bar3 {
+  -webkit-transform:  rotate(45deg) translate(-6px, -8px);
+  transform: rotate(45deg) translate(-6px, -8px);
+  width: 20px;
+  margin: 6px 0;
+}
+
+.open .mobile-icon-menu {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: flex-start;
+  width: 100%;
+  padding: 0 64px 0 24px;
+}
+
+.mobile-icon-menu {
+  display: none; 
+  background: #3c3a39;
+  position: absolute;
+  top: 40px;
+  left: 0;
+  height: calc(95vh - 50px);
+  width: 100%;
+}
+
+.mobile-icon-menu hr {
+  width: 100%;
+  border: 1px solid #6f6c6b;
+}
+
+.mobile-icon-menu .mobile-menu-item {
+  margin-bottom: 10px;
+  text-decoration: none;
+}
+
+.mobile-icon-menu .mobile-menu-item .mobile-menu-link {
+  color: #dbd8d7;
+  text-decoration-line: none;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 32px;
+  line-height: 44px;
+}
+
 /* =============================For Tablet View========================== */
 @media screen and (min-device-width: 604px) {
   /* and  (max-device-width: 1024px) */
@@ -42,7 +113,7 @@
     display: none;
   }
 
-  .hamburger .icon {
+  .hamburger-mobile-icon {
     height: 10px;
     color: #dbd8d7;
     width: 30px;
@@ -652,52 +723,47 @@
 /* ========================= For Mobile portrait View ======================== */
 @media screen and (max-width: 604px) {
   header {
-    height: 5.7%;
-    width: 100%;
-    position: fixed;
-    top: 0;
-  }
-
-  header nav {
-    background-color: #3c3a39;
-    padding-bottom: 15px;
-    width: 100%;
-    position: fixed;
-    top: 0;
     flex-direction: row;
     display: flex;
     justify-content: space-between;
-    align-items: center;
+    align-items: start;
+    height: 5.7%;
+    width: 100%;
+    position: fixed;
+    padding-bottom: 15px;
+    background-color: #3c3a39;
+    top: 0;
   }
 
-  .brand {
+  nav {
+    padding-right: 24px;
+  }
+
+  .brand,
+  .hamburger-mobile-icon {
     padding-top: 20px;
   }
 
-  .brand .logo {
+  .logo {
+    padding-left: 24px;
     font-weight: bold;
-    padding-left: 30px;
     letter-spacing: 2px;
     font-size: 18px;
     color: #fff;
+    line-height: 24px;
     text-decoration-line: none;
-    margin-bottom: 0;
   }
 
-  .hamburger {
-    padding-top: 20px;
+  .dark-logo {
+    color: #3c3a39;
   }
 
   .hamburger ul.menu {
     display: none;
   }
 
-  .hamburger .icon {
-    height: 10px;
-    color: #dbd8d7;
-    width: 30px;
-    font-size: 17px;
-    padding-right: 25px;
+  .hamburger-mobile-icon {
+    display: block;
   }
 
   .hero {
@@ -1284,10 +1350,6 @@
 
 /* for the device with width lower than 360 */
 @media screen and (max-width: 360px) {
-  .btn-see-project {
-    background-color: #3d6da5;
-  }
-
   .hero {
     height: 100%;
     padding: 120px 30px 90px 25px;
@@ -1302,6 +1364,10 @@
 }
 
 @media screen and (max-width: 375px) {
+  .mobile-icon-menu {
+    top: 30px;
+  }
+
   .recent-works .work-card {
     height: 348px;
   }
