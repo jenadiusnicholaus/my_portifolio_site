@@ -1,3 +1,44 @@
+header {
+  flex-direction: row;
+  display: flex;
+  justify-content: space-between;
+  align-items: start;
+  height: 5.7%;
+  width: 100%;
+  position: fixed;
+  padding-bottom: 15px;
+  background-color: #3c3a39;
+  top: 0;
+}
+
+nav {
+  padding-right: 24px;
+}
+
+.brand,
+.hamburger-mobile-icon {
+  padding-top: 20px;
+}
+
+.logo {
+  padding-left: 24px;
+  font-weight: bold;
+  letter-spacing: 2px;
+  font-size: 18px;
+  color: #fff;
+  line-height: 24px;
+  text-decoration-line: none;
+}
+
+.dark-logo {
+  color: #3c3a39;
+}
+
+.hamburger ul.menu {
+  display: none;
+}
+
+
 /* Mobile menu css */
 .hamburger-mobile-icon {
   display: block;
@@ -71,54 +112,8 @@
 
 /* =============================For Tablet View========================== */
 @media screen and (min-device-width: 604px) {
-  /* and  (max-device-width: 1024px) */
-  header {
-    height: 5.7%;
-    width: 100%;
-    position: fixed;
-    top: 0;
-  }
-
-  header nav {
-    background-color: #3c3a39;
-    padding-bottom: 15px;
-    width: 100%;
-    position: fixed;
-    top: 0;
-    flex-direction: row;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-  }
-
-  .brand {
-    padding-top: 20px;
-  }
-
-  .brand .logo {
-    font-weight: bold;
-    padding-left: 30px;
-    letter-spacing: 2px;
-    font-size: 18px;
-    color: #fff;
-    text-decoration-line: none;
-    margin-bottom: 0;
-  }
-
-  .hamburger {
-    padding-top: 20px;
-  }
-
-  .hamburger ul.menu {
-    display: none;
-  }
-
   .hamburger-mobile-icon {
-    height: 10px;
-    color: #dbd8d7;
-    width: 30px;
-    font-size: 17px;
-    padding-right: 25px;
+    display: block;
   }
 
   .hero {
@@ -722,46 +717,6 @@
 
 /* ========================= For Mobile portrait View ======================== */
 @media screen and (max-width: 604px) {
-  header {
-    flex-direction: row;
-    display: flex;
-    justify-content: space-between;
-    align-items: start;
-    height: 5.7%;
-    width: 100%;
-    position: fixed;
-    padding-bottom: 15px;
-    background-color: #3c3a39;
-    top: 0;
-  }
-
-  nav {
-    padding-right: 24px;
-  }
-
-  .brand,
-  .hamburger-mobile-icon {
-    padding-top: 20px;
-  }
-
-  .logo {
-    padding-left: 24px;
-    font-weight: bold;
-    letter-spacing: 2px;
-    font-size: 18px;
-    color: #fff;
-    line-height: 24px;
-    text-decoration-line: none;
-  }
-
-  .dark-logo {
-    color: #3c3a39;
-  }
-
-  .hamburger ul.menu {
-    display: none;
-  }
-
   .hamburger-mobile-icon {
     display: block;
   }
