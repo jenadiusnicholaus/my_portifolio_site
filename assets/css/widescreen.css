@@ -646,7 +646,7 @@ body {
     height: 40px;
     margin-top: 10px;
     padding-bottom: 0;
-  } 
+  }
 
   .modal-header h2 {
     font-size: 32px;
@@ -656,7 +656,7 @@ body {
   .work-details-tech-stack {
     height: 70px;
   }
-  
+
   .modal-body {
     display: flex;
     flex-direction: row;
@@ -669,9 +669,8 @@ body {
     margin: auto;
     padding: 16px;
     border: none;
-    height: 70 vh;
   }
-  
+
   .work-details-image-container {
     width: 50vw;
     height: 60vh;
@@ -696,7 +695,6 @@ body {
 
   .project-details-ul-items {
     justify-content: flex-start;
-
   }
 
   .project-details-ul-items li {

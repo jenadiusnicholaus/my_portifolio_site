@@ -1,5 +1,5 @@
 .modal {
-  display: ;
+  display: inline;
   position: fixed;
   z-index: 1;
   padding-top: 100px;
@@ -137,6 +137,6 @@
 
 .project-details-ul-items li a:hover {
   color: #ff6b00;
-  background-color: #fff5e1;;
+  background-color: #fff5e1;
   border: 1px solid #ff6b00;
 }
