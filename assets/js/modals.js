@@ -1,6 +1,5 @@
 const modal = document.getElementById('project-modal');
 const btn = document.getElementById('myBtn');
-
 const span = document.getElementsByClassName('close')[0];
 
 btn.onclick = () => {
