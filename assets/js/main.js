@@ -86,6 +86,7 @@ const logoToggleClass = (element, toggleClass) => {
   element.classList.toggle(toggleClass);
 };
 
+// create an hambarger mene
 document.querySelectorAll('.hamburger-mobile-icon').forEach((hamburgIcon) => {
   hamburgIcon.addEventListener('click', () => {
     hamburgIcon.classList.toggle('open');
@@ -104,10 +105,19 @@ window.addEventListener('load', () => {
   workCardContainer.innerHTML = '';
   let htmlCard = '';
 
+  // Update recent project dynamicaly
   recentworktitle.textContent = projectData[0].name;
   img.setAttribute('src', projectData[0].image);
   recentworkdesc.textContent = projectData[0].description;
   [techOne.value, techTwo.value, techThree.value] = projectData[0].technologies;
+
+  // get data from storage
+  const retrievedObject = localStorage.getItem('contacts_info');
+  const parseJson = JSON.parse(retrievedObject)
+  console.log('retrievedObject: ', JSON.parse(retrievedObject));
+  document.getElementById('full-name').value = parseJson.full_name;
+  document.getElementById('email').value = parseJson.user_email ;
+  document.getElementById('contents').value =parseJson.user_contents;
 
   for (let index = 0; index < projectData.length; index += 1) {
     const project = projectData[index];
