@@ -1,9 +1,10 @@
 const projectData = [
   {
+    id: 1,
     name: 'Multi-Post Stories',
     description: 'A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a standard dummy text',
     featured: 'jenad',
-    image: 'jenad',
+    image: 'assets/img/imageplaceholder.png',
     technologies: [
       'Html',
       'Css',
@@ -15,10 +16,12 @@ const projectData = [
   },
 
   {
+
+    id: 2,
     name: 'Multi-Post Stories',
     description: 'A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a standard dummy text',
     featured: 'jenad',
-    image: 'jenad',
+    image: 'https://github.com/jenadiusnicholaus/my-portfolio-site/blob/main/assets/img/mobileversion.png',
     technologies: [
       'Html',
       'Css',
@@ -30,10 +33,12 @@ const projectData = [
   },
 
   {
+
+    id: 3,
     name: 'Multi-Post Stories',
     description: 'A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a standard dummy text',
     featured: 'jenad',
-    image: 'jenad',
+    image: 'https://github.com/jenadiusnicholaus/my-portfolio-site/blob/main/assets/img/mobileversion.png',
     technologies: [
       'Html',
       'Css',
@@ -45,10 +50,12 @@ const projectData = [
   },
 
   {
+
+    id: 4,
     name: 'Multi-Post Stories',
     description: 'A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a standard dummy text',
     featured: 'jenad',
-    image: 'jenad',
+    image: 'https://github.com/jenadiusnicholaus/my-portfolio-site/blob/main/assets/img/mobileversion.png',
     technologies: [
       'Html',
       'Css',
@@ -60,10 +67,11 @@ const projectData = [
   },
 
   {
+    id: 5,
     name: 'Multi-Post Stories',
     description: 'A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a standard dummy text',
     featured: 'jenad',
-    image: 'jenad',
+    image: 'https://github.com/jenadiusnicholaus/my-portfolio-site/blob/main/assets/img/mobileversion.png',
     technologies: [
       'Html',
       'Css',
@@ -74,7 +82,6 @@ const projectData = [
     link_to_source: 'https://github.com/jenadiusnicholaus/my-portfolio-site',
   },
 ];
-
 const logoToggleClass = (element, toggleClass) => {
   element.classList.toggle(toggleClass);
 };
@@ -86,34 +93,45 @@ document.querySelectorAll('.hamburger-mobile-icon').forEach((hamburgIcon) => {
   });
 });
 
-window.addEventListener("load", (event) => {
-  let workCardContainer = document.getElementById('work-card-container').innerHTML = '';
-  console.log(workCardContainer);
-  let card = '';
-  for ( let index = 0; index < projectData.length;  index ++) {
-    console.log(index);
-    card += `<div class="card-container">
+window.addEventListener('load', () => {
+  const workCardContainer = document.getElementById('work-card-container');
+  const recentworktitle = document.getElementById('recentworktitle');
+  const recentworkdesc = document.getElementById('recentworkdesc');
+  const img = document.getElementById('img');
+  const techOne = document.getElementById('tech-1');
+  const techTwo = document.getElementById('tech-2');
+  const techThree = document.getElementById('tech-3');
+  workCardContainer.innerHTML = '';
+  let htmlCard = '';
+
+  recentworktitle.textContent = projectData[0].name;
+  img.setAttribute('src', projectData[0].image);
+  recentworkdesc.textContent = projectData[0].description;
+  [techOne.value, techTwo.value, techThree.value] = projectData[0].technologies;
+
+  for (let index = 0; index < projectData.length; index += 1) {
+    const project = projectData[index];
+    htmlCard += `<div class="card-container">
     <div class="work-card">
         <div class="work-card-body">
-            <h1>Professional Art print Data</h1>
+            <h1>${project.name}</h1>
             <p class="work-description">
-                A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry's standard
+            ${project.description}
             </p>
             <div class="work-tech-stack">
                 <ul class="ul-links">
-                    <li class="t-stack"><button type="button" class="btn-tech-stacks">html</button></li>
-                    <li class="t-stack"><button type="button" class="btn-tech-stacks">bootstrap</button></li>
-                    <li class="t-stack"><button type="button" class="btn-tech-stacks">Ruby</button></li>
+                <li class="t-stack"><a type="button" class="btn-tech-stacks">${project.technologies[0]}</a></li>
+                <li class="t-stack"><a type="button" class="btn-tech-stacks">${project.technologies[1]}</a></li>
+                <li class="t-stack"><a type="button" class="btn-tech-stacks">${project.technologies[2]}</a></li>
                 </ul>
             </div>
         </div>
     </div>
     <div class="work-card-footer">
-        <button type="button" class="footer-btn">See Project </button>
+        <button value="${project.id}" type="button" class="footer-btn">See Project </button>
     </div>
-</div>`;
-};
-// console.log(card)
-let j= workCardContainer.innerHTML = card;
-console.log(j)
+    </div>`;
+  }
+
+  workCardContainer.innerHTML = htmlCard;
 });
