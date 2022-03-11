@@ -159,21 +159,22 @@
                 </p>
             </div>
             <div class="get-in-touch-form">
-                <form action="https://formspree.io/f/xlezbvrz" method="POST">
+                <form name="contactform" action="https://formspree.io/f/xlezbvrz" method="POST" onsubmit="validateForm()">
                     <div class="input-control">
                         <input maxlength="30" class="fullname-control" type="text" name="full-name" id="full-name" placeholder="Full name" required>
                     </div>
                     <div class="input-control">
-                        <input class="emaol-control" type="email" id="email" name="email-address" placeholder="Email address" required>
+                        <input class="emaol-control" type="email" id="email" name="email-address" placeholder="Email address">
                     </div>
                     <div class="input-control">
                         <textarea name="content" id="contents" maxlength="500"   rows="4" placeholder="Enter text here" required></textarea>
                     </div>
                     <div class="get-in-touch-button">
                         <div class="divider" hidden></div>
-                    <button  class="btn-get-in-touch" type="submit">Get in touch</button>
+                        <button  class="btn-get-in-touch" type="submit">Get in touch</button>
                         <div hidden></div>
                     </div>
+                    <div class="message"><span> <small>Message</small></span> </div>
                 </form>
             </div>
         </section>
@@ -192,7 +193,6 @@
                 <hr class="hr2">
                 </div>
         </footer>
-
         <!--modals-->
         <div id="project-modal" class="modal">
             <div class="work-details-card-container">
@@ -231,11 +231,9 @@
             </div>
         </div>
         </div>
-
-
-
  <script  src="assets/js/modals.js"></script>
- <script  src="assets/js/main.js"></script>
+ <script src="assets/js/main.js"></script>
+ <script src="assets/js/formvalidation.js"></script>
 
 </body>
 </html>

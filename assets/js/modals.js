@@ -115,7 +115,7 @@ document.getElementById('work-card-container').addEventListener('click', (event)
     return;
   }
 
-  projectDataTwo.filter((item) => {
+  projectDataTwo.forEach((item) => {
     if (parseInt(event.target.value, 10) === item.id) {
       modal.style.display = 'block';
       workTitle.textContent = item.name;
