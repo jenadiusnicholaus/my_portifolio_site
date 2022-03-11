@@ -6,8 +6,8 @@ document.getElementById('contactform').onsubmit = () => {
     const allFields = {
       full_name: fullName,
       user_email: email,
-      user_contents: contents
-    }
+      user_contents: contents,
+    };
     localStorage.setItem('contacts_info', JSON.stringify(allFields));
     return true;
   }
@@ -16,4 +16,3 @@ document.getElementById('contactform').onsubmit = () => {
   messege.textContent = 'Email must be in lower case';
   return false;
 };
-

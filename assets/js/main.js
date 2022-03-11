@@ -113,11 +113,10 @@ window.addEventListener('load', () => {
 
   // get data from storage
   const retrievedObject = localStorage.getItem('contacts_info');
-  const parseJson = JSON.parse(retrievedObject)
-  console.log('retrievedObject: ', JSON.parse(retrievedObject));
+  const parseJson = JSON.parse(retrievedObject);
   document.getElementById('full-name').value = parseJson.full_name;
-  document.getElementById('email').value = parseJson.user_email ;
-  document.getElementById('contents').value =parseJson.user_contents;
+  document.getElementById('email').value = parseJson.user_email;
+  document.getElementById('contents').value = parseJson.user_contents;
 
   for (let index = 0; index < projectData.length; index += 1) {
     const project = projectData[index];
