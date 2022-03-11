@@ -1,4 +1,4 @@
-const projectData = [
+const projectDataTwo = [
   {
     id: 1,
     name: 'Multi-Post Stories',
@@ -90,7 +90,7 @@ const liveLink = document.getElementById('live-link');
 const source = document.getElementById('work-source');
 
 document.getElementById('recentProjectBtn').onclick = () => {
-  const recenwork = projectData[0];
+  const recenwork =  projectDataTwo[0];
   modal.style.display = 'block';
   workTitle.textContent = recenwork.name;
   workDescription.textContent = recenwork.description;
@@ -115,7 +115,7 @@ document.getElementById('work-card-container').addEventListener('click', (event)
     return;
   }
 
-  projectData.filter((item) => {
+   projectDataTwo.filter((item) => {
     if (parseInt(event.target.value, 10) === item.id) {
       modal.style.display = 'block';
       workTitle.textContent = item.name;
