@@ -159,12 +159,12 @@
                 </p>
             </div>
             <div class="get-in-touch-form">
-                <form name="contactform" action="https://formspree.io/f/xlezbvrz" method="POST" onsubmit="validateForm()">
+                <form id="contactform" name="contactform" action="https://formspree.io/f/xlezbvrz" method="POST">
                     <div class="input-control">
                         <input maxlength="30" class="fullname-control" type="text" name="full-name" id="full-name" placeholder="Full name" required>
                     </div>
                     <div class="input-control">
-                        <input class="emaol-control" type="email" id="email" name="email-address" placeholder="Email address">
+                        <input class="emaol-control" type="email" id="email" name="email-address" required placeholder="Email address">
                     </div>
                     <div class="input-control">
                         <textarea name="content" id="contents" maxlength="500"   rows="4" placeholder="Enter text here" required></textarea>
@@ -174,7 +174,7 @@
                         <button  class="btn-get-in-touch" type="submit">Get in touch</button>
                         <div hidden></div>
                     </div>
-                    <div class="message"><span> <small>Message</small></span> </div>
+                    <div id ="message-div" class="message"><span> <small>Message</small></span> </div>
                 </form>
             </div>
         </section>

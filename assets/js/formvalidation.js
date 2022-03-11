@@ -1,8 +1,10 @@
-function validateForm() {
-    let x = document.forms["contactform"]["email-address"].value;
-    if (x == "") {
-      alert("Name must be filled out");
-      return false;
-    }
-    console.log('can submit');
+document.getElementById('contactform').onsubmit = () => {
+  const email = document.getElementById('email').value;
+  if (email === email.toLowerCase()) {
+    return true;
   }
+  const messege = document.getElementById('message-div');
+  messege.style.display = 'block';
+  messege.textContent = 'Email must be in lower case';
+  return false;
+};

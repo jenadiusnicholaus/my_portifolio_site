@@ -107,11 +107,12 @@ nav {
 
 .message {
   margin-top: 12px;
-  height:  80px;
+  height: 80px;
   border-radius: 20px;
   border-radius: 1px;
   padding: 12px;
   color: red;
+  display: none;
 }
 
 /* =============================For Tablet View========================== */
