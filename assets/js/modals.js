@@ -1,4 +1,4 @@
-const projectData = [
+const projectDataTwo = [
   {
     id: 1,
     name: 'Multi-Post Stories',
@@ -82,56 +82,47 @@ const projectData = [
     link_to_source: 'https://github.com/jenadiusnicholaus/my-portfolio-site',
   },
 ];
-const logoToggleClass = (element, toggleClass) => {
-  element.classList.toggle(toggleClass);
+
+const modal = document.getElementById('project-modal');
+const workDescription = document.getElementById('work-description');
+const workTitle = document.getElementById('title');
+const liveLink = document.getElementById('live-link');
+const source = document.getElementById('work-source');
+
+document.getElementById('recentProjectBtn').onclick = () => {
+  const recenwork = projectDataTwo[0];
+  modal.style.display = 'block';
+  workTitle.textContent = recenwork.name;
+  workDescription.textContent = recenwork.description;
+  liveLink.setAttribute('href', recenwork.link_to_live_version);
+  source.setAttribute('href', recenwork.link_to_source);
 };
 
-document.querySelectorAll('.hamburger-mobile-icon').forEach((hamburgIcon) => {
-  hamburgIcon.addEventListener('click', () => {
-    hamburgIcon.classList.toggle('open');
-    logoToggleClass(document.querySelector('.logo'), 'dark-logo');
-  });
-});
+document.getElementsByClassName('close')[0].onclick = () => {
+  modal.style.display = 'none';
+};
 
-window.addEventListener('load', () => {
-  const workCardContainer = document.getElementById('work-card-container');
-  const recentworktitle = document.getElementById('recentworktitle');
-  const recentworkdesc = document.getElementById('recentworkdesc');
-  const img = document.getElementById('img');
-  const techOne = document.getElementById('tech-1');
-  const techTwo = document.getElementById('tech-2');
-  const techThree = document.getElementById('tech-3');
-  workCardContainer.innerHTML = '';
-  let htmlCard = '';
+window.onclick = (event) => {
+  if (event.target === modal) {
+    modal.style.display = 'none';
+  }
+};
 
-  recentworktitle.textContent = projectData[0].name;
-  img.setAttribute('src', projectData[0].image);
-  recentworkdesc.textContent = projectData[0].description;
-  [techOne.value, techTwo.value, techThree.value] = projectData[0].technologies;
+document.getElementById('work-card-container').addEventListener('click', (event) => {
+  const isButton = event.target.nodeName === 'BUTTON';
 
-  for (let index = 0; index < projectData.length; index += 1) {
-    const project = projectData[index];
-    htmlCard += `<div class="card-container">
-    <div class="work-card">
-        <div class="work-card-body">
-            <h1>${project.name}</h1>
-            <p class="work-description">
-            ${project.description}
-            </p>
-            <div class="work-tech-stack">
-                <ul class="ul-links">
-                <li class="t-stack"><a type="button" class="btn-tech-stacks">${project.technologies[0]}</a></li>
-                <li class="t-stack"><a type="button" class="btn-tech-stacks">${project.technologies[1]}</a></li>
-                <li class="t-stack"><a type="button" class="btn-tech-stacks">${project.technologies[2]}</a></li>
-                </ul>
-            </div>
-        </div>
-    </div>
-    <div class="work-card-footer">
-        <button value="${project.id}" type="button" class="footer-btn">See Project </button>
-    </div>
-    </div>`;
+  if (!isButton) {
+    return;
   }
 
-  workCardContainer.innerHTML = htmlCard;
+  projectDataTwo.filter((item) => {
+    if (parseInt(event.target.value, 10) === item.id) {
+      modal.style.display = 'block';
+      workTitle.textContent = item.name;
+      workDescription.textContent = item.description;
+      liveLink.setAttribute('href', item.link_to_live_version);
+      source.setAttribute('href', item.link_to_source);
+    }
+    return item;
+  });
 });

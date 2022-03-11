@@ -637,6 +637,72 @@ body {
     background: #0d151e;
     border-radius: 10px;
   }
+
+  .modal {
+    padding-top: 50px;
+  }
+
+  .modal-header {
+    height: 40px;
+    margin-top: 10px;
+    padding-bottom: 0;
+  }
+
+  .modal-header h2 {
+    font-size: 32px;
+    line-height: 44px;
+  }
+
+  .work-details-tech-stack {
+    height: 70px;
+  }
+
+  .modal-body {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .work-details-card-container {
+    background-color: #fff;
+    width: 80%;
+    margin: auto;
+    padding: 16px;
+    border: none;
+  }
+
+  .work-details-image-container {
+    width: 50vw;
+    height: 60vh;
+  }
+
+  .main-content {
+    margin-left: 12px;
+    width: calc(100% / 2);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding-top: 0;
+  }
+
+  .project-details-description {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 24px;
+    line-height: 34px;
+    margin-top: 0;
+  }
+
+  .project-details-ul-items {
+    justify-content: flex-start;
+  }
+
+  .project-details-ul-items li {
+    margin: 0;
+    padding: 0;
+    width: calc(60% / 2);
+    margin-right: 12px;
+  }
 }
 
 @media screen and  (min-width: 992px) {
