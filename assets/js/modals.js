@@ -29,7 +29,7 @@ document.getElementById('recentProjectBtn').onclick = () => {
   workDescription.textContent = recenwork.description;
   liveLink.setAttribute('href', recenwork.link_to_live_version);
   source.setAttribute('href', recenwork.link_to_source);
-  document.getElementById('img').setAttribute('src', recenwork.image);
+  document.getElementById('project-image').setAttribute('src', recenwork.image);
 };
 
 document.getElementsByClassName('close')[0].onclick = () => {
