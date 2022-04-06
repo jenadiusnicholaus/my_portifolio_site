@@ -32,6 +32,8 @@ document.getElementById('recentProjectBtn').onclick = () => {
   document.getElementById('project-image').setAttribute('src', recenwork.image);
 };
 
+document.getElementById('recent-work-image').setAttribute('src', projectDataTwo[0].image);
+
 document.getElementsByClassName('close')[0].onclick = () => {
   modal.style.display = 'none';
 };
@@ -42,6 +44,7 @@ window.onclick = (event) => {
   }
 };
 
+// set links on click
 document.getElementById('work-card-container').addEventListener('click', (event) => {
   const isButton = event.target.nodeName === 'BUTTON';
 
@@ -56,6 +59,7 @@ document.getElementById('work-card-container').addEventListener('click', (event)
       workDescription.textContent = item.description;
       liveLink.setAttribute('href', item.link_to_live_version);
       source.setAttribute('href', item.link_to_source);
+      // document.getElementById('project-image').setAttribute('src', item.image)
     }
     return item;
   });

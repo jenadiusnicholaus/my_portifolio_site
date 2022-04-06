@@ -145,3 +145,8 @@
   width: 50vw;
   height: 60vh;
 }
+
+#recent-work-image,
+#project-image {
+  border: 1px solid #ff6b00;
+}
