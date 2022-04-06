@@ -1,85 +1,18 @@
 const projectDataTwo = [
   {
     id: 1,
-    name: 'Multi-Post Stories',
-    description: 'A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a standard dummy text',
+    name: 'To do list Project',
+    description: '"To-do list" is a tool that helps to organize your day. It simply lists the things that you need to do and allows you to mark them as complete. I will build a simple website that allows for doing that, and i will do it using ES6 and Webpack!',
     featured: 'jenad',
-    image: 'assets/img/imageplaceholder.png',
+    image: 'assets/img/mytodo2.png',
     technologies: [
       'Html',
       'Css',
-      'Bootstrap',
-      'Ruby',
+      'Javascripts',
+      'jest',
     ],
-    link_to_live_version: 'https://jenadiusnicholaus.github.io/my-portfolio-site/',
-    link_to_source: 'https://github.com/jenadiusnicholaus/my-portfolio-site',
-  },
-
-  {
-
-    id: 2,
-    name: 'Multi-Post Stories',
-    description: 'A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a standard dummy text',
-    featured: 'jenad',
-    image: 'https://github.com/jenadiusnicholaus/my-portfolio-site/blob/main/assets/img/mobileversion.png',
-    technologies: [
-      'Html',
-      'Css',
-      'Bootstrap',
-      'Ruby',
-    ],
-    link_to_live_version: 'https://jenadiusnicholaus.github.io/my-portfolio-site/',
-    link_to_source: 'https://github.com/jenadiusnicholaus/my-portfolio-site',
-  },
-
-  {
-
-    id: 3,
-    name: 'Multi-Post Stories',
-    description: 'A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a standard dummy text',
-    featured: 'jenad',
-    image: 'https://github.com/jenadiusnicholaus/my-portfolio-site/blob/main/assets/img/mobileversion.png',
-    technologies: [
-      'Html',
-      'Css',
-      'Bootstrap',
-      'Ruby',
-    ],
-    link_to_live_version: 'https://jenadiusnicholaus.github.io/my-portfolio-site/',
-    link_to_source: 'https://github.com/jenadiusnicholaus/my-portfolio-site',
-  },
-
-  {
-
-    id: 4,
-    name: 'Multi-Post Stories',
-    description: 'A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a standard dummy text',
-    featured: 'jenad',
-    image: 'https://github.com/jenadiusnicholaus/my-portfolio-site/blob/main/assets/img/mobileversion.png',
-    technologies: [
-      'Html',
-      'Css',
-      'Bootstrap',
-      'Ruby',
-    ],
-    link_to_live_version: 'https://jenadiusnicholaus.github.io/my-portfolio-site/',
-    link_to_source: 'https://github.com/jenadiusnicholaus/my-portfolio-site',
-  },
-
-  {
-    id: 5,
-    name: 'Multi-Post Stories',
-    description: 'A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a standard dummy text',
-    featured: 'jenad',
-    image: 'https://github.com/jenadiusnicholaus/my-portfolio-site/blob/main/assets/img/mobileversion.png',
-    technologies: [
-      'Html',
-      'Css',
-      'Bootstrap',
-      'Ruby',
-    ],
-    link_to_live_version: 'https://jenadiusnicholaus.github.io/my-portfolio-site/',
-    link_to_source: 'https://github.com/jenadiusnicholaus/my-portfolio-site',
+    link_to_live_version: 'https://jenadiusnicholaus.github.io/To-Do-list/',
+    link_to_source: 'https://github.com/jenadiusnicholaus/To-Do-list',
   },
 ];
 
@@ -96,7 +29,10 @@ document.getElementById('recentProjectBtn').onclick = () => {
   workDescription.textContent = recenwork.description;
   liveLink.setAttribute('href', recenwork.link_to_live_version);
   source.setAttribute('href', recenwork.link_to_source);
+  document.getElementById('project-image').setAttribute('src', recenwork.image);
 };
+
+document.getElementById('recent-work-image').setAttribute('src', projectDataTwo[0].image);
 
 document.getElementsByClassName('close')[0].onclick = () => {
   modal.style.display = 'none';
@@ -108,6 +44,7 @@ window.onclick = (event) => {
   }
 };
 
+// set links on click
 document.getElementById('work-card-container').addEventListener('click', (event) => {
   const isButton = event.target.nodeName === 'BUTTON';
 
@@ -122,6 +59,7 @@ document.getElementById('work-card-container').addEventListener('click', (event)
       workDescription.textContent = item.description;
       liveLink.setAttribute('href', item.link_to_live_version);
       source.setAttribute('href', item.link_to_source);
+      // document.getElementById('project-image').setAttribute('src', item.image)
     }
     return item;
   });

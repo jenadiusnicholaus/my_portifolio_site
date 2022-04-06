@@ -140,3 +140,13 @@
   background-color: #fff5e1;
   border: 1px solid #ff6b00;
 }
+
+#project-image {
+  width: 50vw;
+  height: 60vh;
+}
+
+#recent-work-image,
+#project-image {
+  border: 1px solid #ff6b00;
+}
