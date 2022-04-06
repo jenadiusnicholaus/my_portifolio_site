@@ -117,6 +117,12 @@ nav {
 
 /* =============================For Tablet View========================== */
 @media screen and (min-device-width: 605px) {
+  #img {
+    width: 100%;
+    height: 30vh;
+    border: 1px solid #ff6b00;
+  }
+
   .hamburger-mobile-icon {
     display: block;
   }
@@ -690,6 +696,12 @@ nav {
 
 /* ======================= In wide tabs========================== */
 @media (min-width: 768px) {
+  #img {
+    width: 40vw;
+    height: 50vh;
+    border: 1px solid #ff6b00;
+  }
+
   .hero {
     height: 82vh;
     padding: 134.5px 30px 0 25px;
@@ -734,6 +746,12 @@ nav {
 @media screen and (max-width: 604px) {
   .hamburger ul.menu {
     display: none;
+  }
+
+  #img {
+    width: 100%;
+    height: 30vh;
+    border: 1px solid #ff6b00;
   }
 
   .hamburger-mobile-icon {

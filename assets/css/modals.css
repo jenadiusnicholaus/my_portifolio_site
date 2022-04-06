@@ -140,3 +140,8 @@
   background-color: #fff5e1;
   border: 1px solid #ff6b00;
 }
+
+#img {
+  width: 50vw;
+  height: 60vh;
+}
