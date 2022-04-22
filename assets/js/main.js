@@ -1,7 +1,39 @@
 const projectData = [
   {
+    id: 0,
+    name: 'Tv Show Project',
+    description: 'This is a TV Shows web site source from TVmaze API. In the website, a user can click on heart icon and get it recorded in Involvement API. Similarly, a user can write comment and get it recorded in Involvement API.',
+    featured: 'jenad',
+    image: 'assets/img/tvshow.png',
+    technologies: [
+      'Html',
+      'Css',
+      'Javascripts',
+      'jest',
+    ],
+    link_to_live_version: 'https://jenadiusnicholaus.github.io/Leaderboard/',
+    link_to_source: 'https://github.com/jenadiusnicholaus/Leaderboard',
+  },
+  
+  {
     id: 1,
-    name: 'To do list Project',
+    name: 'Lead Boarder',
+    description: 'The leaderboard website displays scores submitted by different players, it meant a play gets unique id for the Game session and from there can be allowed to play the game and to do that i used Leaderboard API using JavaScript async and await and add simple styling.',
+    featured: 'jenad',
+    image: 'assets/img/leaderBoard.png',
+    technologies: [
+      'Html',
+      'Css',
+      'Javascripts',
+      'jest',
+    ],
+    link_to_live_version: 'https://jenadiusnicholaus.github.io/Leaderboard/',
+    link_to_source: 'https://github.com/jenadiusnicholaus/Leaderboard',
+  },
+  
+  {
+    id: 2,
+    name: 'To Do List Project',
     description: '"To-do list" is a tool that helps to organize your day. It simply lists the things that you need to do and allows you to mark them as complete. I will build a simple website that allows for doing that, and i will do it using ES6 and Webpack!',
     featured: 'jenad',
     image: 'assets/img/mytodo2.png',
@@ -14,6 +46,22 @@ const projectData = [
     link_to_live_version: 'https://jenadiusnicholaus.github.io/To-Do-list/',
     link_to_source: 'https://github.com/jenadiusnicholaus/To-Do-list',
   },
+
+  {
+    id: 3,
+    name: 'Wora',
+    description: 'To-do list" is a tool that helps to organize your day. It simply lists the things that you need to do and allows you to mark them as complete. I will build a simple website that allows for doing that, and i will do it using ES6 and Webpack!',
+    featured: 'jenad',
+    image: 'assets/img/wora.png',
+    technologies: [
+      'flutter',
+      'Dart',
+      'firebase',
+    ],
+    link_to_live_version: 'https://jenadiusnicholaus.github.io/To-Do-list/',
+    link_to_source: 'https://github.com/jenadiusnicholaus/To-Do-list',
+  },
+
 
 ];
 const logoToggleClass = (element, toggleClass) => {
@@ -51,9 +99,10 @@ window.addEventListener('load', () => {
   document.getElementById('full-name').value = parseJson.full_name ? parseJson.full_name : '';
   document.getElementById('email').value = parseJson.user_email ? parseJson.user_email : '';
   document.getElementById('contents').value = parseJson.user_contents ? parseJson.user_contents : '';
-
+  
   for (let index = 0; index < projectData.length; index += 1) {
     const project = projectData[index];
+
     htmlCard += `<div class="card-container">
     <div class="work-card">
         <div class="work-card-body">
@@ -77,4 +126,6 @@ window.addEventListener('load', () => {
   }
 
   workCardContainer.innerHTML = htmlCard;
+  let recent_works_card = document.querySelector('.work-card');
+  // recent_works_card.style.background= "linear-gradient(180.45deg, rgba(38, 38, 38, 0) 0.75%, rgba(34, 32, 32, 0.184) 61.94%), url('./img/maskimage.png')";
 });
