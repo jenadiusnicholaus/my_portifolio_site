@@ -11,8 +11,8 @@ const projectDataTwo = [
       'Javascripts',
       'jest',
     ],
-    link_to_live_version: 'https://jenadiusnicholaus.github.io/Leaderboard/',
-    link_to_source: 'https://github.com/jenadiusnicholaus/Leaderboard',
+    link_to_live_version: 'https://aboongm.github.io/Kanban-Board-Capstone-Project/',
+    link_to_source: 'https://github.com/jenadiusnicholaus/Kanban-Board-Capstone-Project',
   },
   
   {
@@ -58,8 +58,8 @@ const projectDataTwo = [
       'Dart',
       'firebase',
     ],
-    link_to_live_version: 'https://jenadiusnicholaus.github.io/To-Do-list/',
-    link_to_source: 'https://github.com/jenadiusnicholaus/To-Do-list',
+    link_to_live_version: 'https://apps.apple.com/us/app/id1544274537',
+    link_to_source: 'https://apps.apple.com/us/app/id1544274537',
   },
 
 ];
