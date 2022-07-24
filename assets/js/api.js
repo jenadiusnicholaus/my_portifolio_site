@@ -8,7 +8,6 @@ class Api {
          if (response.ok) {
            const decodedResponse = await response.json();
            const projects = decodedResponse.results;
-           console.log(projects);
            return projects;
          }
 
