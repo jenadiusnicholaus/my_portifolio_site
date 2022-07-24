@@ -10,7 +10,7 @@ This website is going to consist of all you need to know about my career , conta
 
 ## Live Demo
 
-[Live Demo Link](https://jenadiusnicholaus.github.io/my-portfolio-site/)
+[Live Demo Link](https://jenadiusnicholaus.github.io/my_portifolio_site/)
 
 ## Prerequisites
 
