@@ -1,3 +1,5 @@
+import Api from './api.js';
+
 const projectData = [
   {
     id: 0,
@@ -14,7 +16,7 @@ const projectData = [
     link_to_live_version: 'https://jenadiusnicholaus.github.io/Leaderboard/',
     link_to_source: 'https://github.com/jenadiusnicholaus/Leaderboard',
   },
-  
+
   {
     id: 1,
     name: 'Lead Boarder',
@@ -30,7 +32,7 @@ const projectData = [
     link_to_live_version: 'https://jenadiusnicholaus.github.io/Leaderboard/',
     link_to_source: 'https://github.com/jenadiusnicholaus/Leaderboard',
   },
-  
+
   {
     id: 2,
     name: 'To Do List Project',
@@ -61,7 +63,6 @@ const projectData = [
     link_to_live_version: 'https://jenadiusnicholaus.github.io/To-Do-list/',
     link_to_source: 'https://github.com/jenadiusnicholaus/To-Do-list',
   },
-
 
 ];
 const logoToggleClass = (element, toggleClass) => {
@@ -96,10 +97,10 @@ window.addEventListener('load', () => {
   // get data from storage
   const retrievedObject = localStorage.getItem('contacts_info');
   const parseJson = JSON.parse(retrievedObject);
-  document.getElementById('full-name').value = parseJson.full_name ? parseJson.full_name : '';
-  document.getElementById('email').value = parseJson.user_email ? parseJson.user_email : '';
-  document.getElementById('contents').value = parseJson.user_contents ? parseJson.user_contents : '';
-  
+  // document.getElementById('full-name').value = parseJson.full_name ? parseJson.full_name : '';
+  // document.getElementById('email').value = parseJson.user_email ? parseJson.user_email : '';
+  // document.getElementById('contents').value = parseJson.user_contents ? parseJson.user_contents : '';
+
   for (let index = 0; index < projectData.length; index += 1) {
     const project = projectData[index];
 
@@ -126,6 +127,7 @@ window.addEventListener('load', () => {
   }
 
   workCardContainer.innerHTML = htmlCard;
-  let recent_works_card = document.querySelector('.work-card');
+  const recent_works_card = document.querySelector('.work-card');
   // recent_works_card.style.background= "linear-gradient(180.45deg, rgba(38, 38, 38, 0) 0.75%, rgba(34, 32, 32, 0.184) 61.94%), url('./img/maskimage.png')";
 });
+Api.getProjects();

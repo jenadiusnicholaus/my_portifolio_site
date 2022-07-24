@@ -14,7 +14,7 @@ const projectDataTwo = [
     link_to_live_version: 'https://jenadiusnicholaus.github.io/Leaderboard/',
     link_to_source: 'https://github.com/jenadiusnicholaus/Leaderboard',
   },
-  
+
   {
     id: 1,
     name: 'Lead Boarder',
@@ -30,7 +30,7 @@ const projectDataTwo = [
     link_to_live_version: 'https://jenadiusnicholaus.github.io/Leaderboard/',
     link_to_source: 'https://github.com/jenadiusnicholaus/Leaderboard',
   },
-  
+
   {
     id: 2,
     name: 'To Do List Project',
@@ -107,7 +107,7 @@ document.getElementById('work-card-container').addEventListener('click', (event)
       workDescription.textContent = item.description;
       liveLink.setAttribute('href', item.link_to_live_version);
       source.setAttribute('href', item.link_to_source);
-      document.getElementById('project-image').setAttribute('src', item.image)
+      document.getElementById('project-image').setAttribute('src', item.image);
     }
     return item;
   });
