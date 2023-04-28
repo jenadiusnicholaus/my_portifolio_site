@@ -172,6 +172,7 @@ body {
   .image-placeholder .image-part img {
     width: 40vw;
     height: 50vh;
+    object-fit: contain;
   }
 
   .image-placeholder .image-part img:hover {
@@ -302,6 +303,11 @@ body {
     font-weight: normal;
     font-size: 17px;
     line-height: 24px;
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-line-clamp: 5;
+    line-clamp: 5;
+    -webkit-box-orient: vertical;
   }
 
   .recent-works .work-card-body .work-tech-stack ul.ul-links {
@@ -705,7 +711,7 @@ body {
   }
 }
 
-@media screen and  (min-width: 992px) {
+@media screen and (min-width: 992px) {
   .image-placeholder .description-part .btn-see-project button {
     width: 15.9vw;
     padding: 17px;

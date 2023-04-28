@@ -120,6 +120,7 @@ nav {
   #project-image {
     width: 100%;
     height: 30vh;
+    object-fit: contain;
     border: 1px solid #ff6b00;
   }
 
@@ -1467,13 +1468,13 @@ nav {
   }
 }
 
-@media screen and  (min-width: 488px) {
+@media screen and (min-width: 488px) {
   .recent-works .work-card {
     height: 399px;
   }
 }
 
-@media screen and  (min-width: 432px) {
+@media screen and (min-width: 432px) {
   .recent-works .work-card {
     height: 310px;
   }

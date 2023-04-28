@@ -5,7 +5,7 @@ const logoToggleClass = (element, toggleClass) => {
   element.classList.toggle(toggleClass);
 };
 
-// create an hambarger mene
+// create an hambarger menu
 document.querySelectorAll('.hamburger-mobile-icon').forEach((hamburgIcon) => {
   hamburgIcon.addEventListener('click', () => {
     hamburgIcon.classList.toggle('open');
@@ -23,25 +23,24 @@ window.addEventListener('load', async () => {
   const techThree = document.getElementById('tech-3');
   workCardContainer.innerHTML = '';
   let htmlCard = '';
-  const projectData  = await Api.getProjects();
+  const projectData = await Api.getProjects();
 
-  // Update recent project dynamicaly
-  recentworktitle.textContent = projectData[0].name;
-  img.setAttribute('src', projectData[0].image);
-  recentworkdesc.textContent = projectData[0].description;
+  // Update recent project dynamically
+  recentworktitle.textContent = projectData[projectData.length - 1].name;
+  img.setAttribute('src', projectData[projectData.length - 1].image);
+  recentworkdesc.textContent = projectData[projectData.length - 1].description;
   // [techOne.value, techTwo.value, techThree.value] = projectData[0].technologies;
 
   // get data from  local storage
   const retrievedObject = localStorage.getItem('contacts_info');
   const parseJson = JSON.parse(retrievedObject);
-  // document.getElementById('full-name').value = parseJson.full_name ? parseJson.full_name : '';
-  // document.getElementById('email').value = parseJson.user_email ? parseJson.user_email : '';
-  // document.getElementById('contents').value = parseJson.user_contents ? parseJson.user_contents : '';
 
 
-  for (let index = 0; index <  projectData.length; index += 1) {
-    const project =  projectData[index];
-    console.log(project)
+  const newdata = projectData.sort((a, b) => projectData.indexOf(b) - projectData.indexOf(a));
+  for (let index = 0; index < newdata.length; index += 1) {
+    const project = newdata[index];
+
+
 
     htmlCard += `<div class="card-container">
     <div class="work-card">

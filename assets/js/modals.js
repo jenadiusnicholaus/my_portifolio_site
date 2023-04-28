@@ -5,9 +5,9 @@ const workTitle = document.getElementById('title');
 const liveLink = document.getElementById('live-link');
 const source = document.getElementById('work-source');
 
-document.getElementById('recentProjectBtn').onclick =  async () => {
-   const projectDataTwo = await Api.getProjects()
-  const recenwork = projectDataTwo[0];
+document.getElementById('recentProjectBtn').onclick = async () => {
+  const projectDataTwo = await Api.getProjects()
+  const recenwork = projectDataTwo[projectDataTwo.length - 1];
   modal.style.display = 'block';
   workTitle.textContent = recenwork.name;
   workDescription.textContent = recenwork.description;
