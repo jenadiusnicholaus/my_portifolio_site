@@ -90,7 +90,7 @@
 .work-details-image-container {
   width: 100%;
   height: 180px;
-  background: url('../img/Snapshoot-Portfolio.png');
+  background: url("../img/Snapshoot-Portfolio.png");
   background-size: cover;
   background-repeat: no-repeat;
 }

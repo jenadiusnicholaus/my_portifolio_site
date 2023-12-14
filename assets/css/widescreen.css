@@ -785,3 +785,45 @@ body {
     width: 40vw;
   }
 }
+.side-recent-content {
+  width: 100%;
+}
+
+#recentProjectBtn {
+  display: none;
+}
+
+.shimmer-text {
+  text-align: center;
+  width: 100%;
+  color: grey;
+  position: relative;
+  overflow: hidden;
+  background: rgb(232, 223, 223);
+  width: 100%;
+}
+
+.shimmer-text::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(
+    to right,
+    transparent 20%,
+    rgba(255, 255, 255, 0.5) 50%,
+    transparent 80%
+  );
+  animation: shimmer 1.5s infinite;
+}
+
+@keyframes shimmer {
+  0% {
+    transform: translateX(-100%);
+  }
+  100% {
+    transform: translateX(100%);
+  }
+}

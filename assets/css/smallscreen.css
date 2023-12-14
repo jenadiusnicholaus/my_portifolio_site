@@ -345,7 +345,12 @@ nav {
   .recent-works .work-card {
     padding: 0 24px 0 24px;
     height: 758px;
-    background: linear-gradient(180.45deg, rgba(38, 38, 38, 0) 0.75%, rgba(38, 38, 38, 0.9) 61.94%), url('../img/maskimage.png');
+    background: linear-gradient(
+        180.45deg,
+        rgba(38, 38, 38, 0) 0.75%,
+        rgba(38, 38, 38, 0.9) 61.94%
+      ),
+      url("../img/maskimage.png");
     background-repeat: no-repeat;
   }
 
@@ -439,7 +444,7 @@ nav {
 
   .about-me .intro {
     height: 652px;
-    background-image: url('../img/aboutmeimage.png');
+    background-image: url("../img/aboutmeimage.png");
     background-repeat: no-repeat;
     background-position: bottom right;
   }
@@ -969,7 +974,12 @@ nav {
   .recent-works .work-card {
     padding: 0 24px 0 24px;
     height: 348px;
-    background: linear-gradient(180.45deg, rgba(38, 38, 38, 0) 0.75%, rgba(38, 38, 38, 0.9) 61.94%), url('../img/maskimage.png');
+    background: linear-gradient(
+        180.45deg,
+        rgba(38, 38, 38, 0) 0.75%,
+        rgba(38, 38, 38, 0.9) 61.94%
+      ),
+      url("../img/maskimage.png");
     background-size: cover;
     background-repeat: no-repeat;
   }
@@ -1065,7 +1075,7 @@ nav {
 
   .about-me .intro {
     height: 652px;
-    background-image: url('../img/aboutmeimage.png');
+    background-image: url("../img/aboutmeimage.png");
     background-repeat: no-repeat;
     background-position: bottom right;
   }
@@ -1412,7 +1422,6 @@ nav {
     -webkit-box-orient: vertical;
   }
 
-
   .work-description {
     overflow: hidden;
     display: -webkit-box;
@@ -1507,4 +1516,8 @@ nav {
   .recent-works .work-card {
     height: 310px;
   }
+}
+
+#recentProjectBtn {
+  display: none;
 }
