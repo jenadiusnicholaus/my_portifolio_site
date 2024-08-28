@@ -1377,6 +1377,9 @@ nav {
 
 /* =========================== only on iphone 5 s/SE ===================== */
 @media screen and (max-device-width: 320px) {
+  .recent-works .work-card-body .work-tech-stack ul.ul-links {
+    width: auto;
+  }
   .hero {
     height: 90vh;
     padding: 70px 30px 0 25px;
@@ -1391,6 +1394,9 @@ nav {
 
 /* =========================== Only on iphone 6/7/8 =========================== */
 @media screen and (min-width: 375px) {
+  .recent-works .work-card-body .work-tech-stack ul.ul-links {
+    width: auto;
+  }
   .hero {
     height: 82vh;
     padding: 134.5px 30px 0 25px;
@@ -1433,6 +1439,9 @@ nav {
 
 /* in very smallest device */
 @media screen and (max-width: 261px) {
+  .recent-works .work-card-body .work-tech-stack ul.ul-links {
+    width: auto;
+  }
   .recent-work .title {
     font-size: 20px;
   }
@@ -1440,6 +1449,9 @@ nav {
 
 /* ============================= only on pexel 2 XL ============== */
 @media screen and (min-width: 411px) {
+  .recent-works .work-card-body .work-tech-stack ul.ul-links {
+    width: auto;
+  }
   .hero {
     height: 100%;
     padding: 150px 30px 100px 25px;
@@ -1458,6 +1470,9 @@ nav {
 }
 
 @media screen and (min-width: 411px) and (max-device-width: 823px) {
+  .recent-works .work-card-body .work-tech-stack ul.ul-links {
+    width: auto;
+  }
   .hero {
     height: 100%;
     padding: 140px 30px 100px 25px;
@@ -1477,6 +1492,9 @@ nav {
 
 /* =================================== for iPad  pro======================== */
 @media (min-device-height: 1024px) and (max-device-width: 1366px) {
+  .recent-works .work-card-body .work-tech-stack ul.ul-links {
+    width: auto;
+  }
   .hero {
     padding: 200px 34px 120px 35px;
     background-size: 20vh;
@@ -1507,12 +1525,18 @@ nav {
 }
 
 @media screen and (min-width: 488px) {
+  .recent-works .work-card-body .work-tech-stack ul.ul-links {
+    width: auto;
+  }
   .recent-works .work-card {
     height: 399px;
   }
 }
 
 @media screen and (min-width: 432px) {
+  .recent-works .work-card-body .work-tech-stack ul.ul-links {
+    width: auto;
+  }
   .recent-works .work-card {
     height: 310px;
   }

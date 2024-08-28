@@ -66,6 +66,14 @@ window.addEventListener("load", async () => {
   for (let index = 0; index < newdata.length; index += 1) {
     const project = newdata[index];
 
+    let techStackHTML = "";
+    project.technologies.forEach((tech) => {
+      techStackHTML += `<li class="t-stack"><a type="button" class="btn-tech-stacks">${tech.name}</a></li>`;
+    });
+    // <li class="t-stack"><a type="button" class="btn-tech-stacks">${project.technologies[0].name}</a></li>
+    // <li class="t-stack"><a type="button" class="btn-tech-stacks">${project.technologies[1].name}</a></li>
+    // <li class="t-stack"><a type="button" class="btn-tech-stacks">${project.technologies[2].name}</a></li>
+
     htmlCard += `<div class="card-container">
     <div class="work-card">
         <div class="work-card-body">
@@ -74,10 +82,9 @@ window.addEventListener("load", async () => {
             ${project.description}
             </p>
             <div class="work-tech-stack">
-                <ul class="ul-links">
-                <li class="t-stack"><a type="button" class="btn-tech-stacks">${project.technologies[0].name}</a></li>
-                <li class="t-stack"><a type="button" class="btn-tech-stacks">${project.technologies[1].name}</a></li>
-                <li class="t-stack"><a type="button" class="btn-tech-stacks">${project.technologies[2].name}</a></li>
+                <ul class="ul-links tech-slider">
+                  ${techStackHTML}
+
                 </ul>
             </div>
         </div>

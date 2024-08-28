@@ -310,8 +310,8 @@ body {
     line-height: 24px;
     overflow: hidden;
     display: -webkit-box;
-    -webkit-line-clamp: 5;
-    line-clamp: 5;
+    -webkit-line-clamp: 4;
+    line-clamp: 4;
     -webkit-box-orient: vertical;
   }
 
@@ -321,11 +321,27 @@ body {
     display: flex;
     flex-direction: row;
     justify-content: flex-start;
+    width: 300px;
+    border-radius: 5px;
+    border: 1px solid #fff;
+    padding: 2px;
     margin-bottom: 22px;
+    overflow: hidden;
+    overflow-x: scroll;
+    white-space: nowrap;
+    cursor: pointer;
+  }
+
+  .recent-works
+    .work-card-body
+    .work-tech-stack
+    ul.ul-links::-webkit-scrollbar {
+    display: none;
   }
 
   .recent-works .work-card-body .work-tech-stack ul.ul-links .t-stack {
     margin-right: 12px;
+    margin: 2px;
     list-style-type: none;
   }
 
