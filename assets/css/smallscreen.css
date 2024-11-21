@@ -1335,6 +1335,23 @@ nav {
   .recent-works .work-card {
     height: 313px;
   }
+
+  .recent-works .work-card-body .work-tech-stack ul.ul-links {
+    margin-top: 0;
+    padding-left: 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    width: 300px;
+    border-radius: 5px;
+    border: 1px solid #fff;
+    padding: 2px;
+    margin-bottom: 22px;
+    overflow: hidden;
+    overflow-x: scroll;
+    white-space: nowrap;
+    cursor: pointer;
+  }
 }
 
 @media screen and (min-width: 478px) {
