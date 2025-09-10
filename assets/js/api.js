@@ -7,13 +7,13 @@ class Api {
        try {
          if (response.ok) {
            const decodedResponse = await response.json();
-           const projects = decodedResponse.results;
-           return projects;
+           return decodedResponse; // Return the full response object with results array
          }
 
-         return response;
+         return null;
        } catch (e) {
-         return e;
+         console.error('API Error:', e);
+         return null;
        }
      }
 }

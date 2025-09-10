@@ -1,0 +1,216 @@
+/* Navbar fixes - restore navigation and theme toggle */
+
+/* Fix body padding-top for proper navbar spacing */
+body {
+  padding-top: 70px !important;
+}
+
+@media (max-width: 768px) {
+  body {
+    padding-top: 70px !important;
+  }
+}
+
+/* Professional navbar styling */
+.nav-container {
+  display: flex !important;
+  justify-content: space-between !important;
+  align-items: center !important;
+  padding: 0 2rem !important;
+  max-width: 1400px !important;
+  margin: 0 auto !important;
+  width: 100% !important;
+  height: 100% !important;
+}
+
+@media (max-width: 768px) {
+  .nav-container {
+    padding: 0 1rem !important;
+  }
+}
+
+/* Adjust header height for better proportions */
+.header {
+  height: 70px !important;
+  padding-top: 10px !important;
+  backdrop-filter: blur(20px) !important;
+  -webkit-backdrop-filter: blur(20px) !important;
+}
+
+@media (max-width: 768px) {
+  .header {
+    height: 70px !important;
+    padding-top: 8px !important;
+  }
+}
+
+/* Desktop navigation styling */
+@media (min-width: 769px) {
+  .nav-menu {
+    display: flex !important;
+    position: static !important;
+    background: transparent !important;
+    box-shadow: none !important;
+    height: auto !important;
+    width: auto !important;
+    padding: 0 !important;
+    margin-left: auto !important;
+    margin-right: 1rem !important;
+  }
+
+  .nav-list {
+    display: flex !important;
+    flex-direction: row !important;
+    gap: 0 !important;
+    align-items: center !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    list-style: none !important;
+  }
+
+  .nav-item {
+    margin: 0 1rem !important;
+  }
+
+  .nav-link {
+    font-size: 0.95rem !important;
+    padding: 0.5rem 0 !important;
+    width: auto !important;
+    display: inline-block !important;
+    border-bottom: none !important;
+    color: var(--text-primary) !important;
+    font-weight: 500 !important;
+    transition: all 0.3s ease !important;
+    border-radius: 0 !important;
+    position: relative !important;
+    text-decoration: none !important;
+    letter-spacing: 0.02em !important;
+  }
+
+  .nav-link::after {
+    content: "" !important;
+    position: absolute !important;
+    bottom: 0 !important;
+    left: 50% !important;
+    width: 0 !important;
+    height: 2px !important;
+    background: linear-gradient(
+      135deg,
+      var(--primary-color),
+      var(--secondary-color)
+    ) !important;
+    transition: all 0.3s ease !important;
+    transform: translateX(-50%) !important;
+  }
+
+  .nav-link:hover::after {
+    width: 100% !important;
+  }
+
+  .nav-link:hover {
+    color: var(--primary-color) !important;
+    transform: translateY(-1px) !important;
+  }
+
+  .header-actions {
+    display: flex !important;
+    align-items: center !important;
+    gap: 1rem !important;
+    flex-shrink: 0 !important;
+  }
+
+  .theme-toggle {
+    display: flex !important;
+    width: 42px !important;
+    height: 42px !important;
+    border-radius: 10px !important;
+    margin-left: 0 !important;
+    background: rgba(255, 255, 255, 0.1) !important;
+    border: 1px solid rgba(255, 255, 255, 0.2) !important;
+    backdrop-filter: blur(10px) !important;
+    transition: all 0.3s ease !important;
+  }
+
+  .theme-toggle:hover {
+    background: rgba(255, 255, 255, 0.2) !important;
+    transform: scale(1.05) !important;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1) !important;
+  }
+
+  .hamburger {
+    display: none !important;
+  }
+}
+
+/* Logo styling fixes */
+.logo-image {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  overflow: hidden;
+  border: 2px solid var(--primary-color);
+  transition: all 0.3s ease;
+  position: relative;
+  flex-shrink: 0;
+}
+
+[data-theme="dark"] .logo-image {
+  border: 2px solid transparent;
+  background: linear-gradient(135deg, #60a5fa, #a78bfa);
+  box-shadow: 0 4px 15px rgba(96, 165, 250, 0.3);
+}
+
+.logo-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+}
+
+.logo-content {
+  display: flex;
+  align-items: center;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: var(--primary-color);
+  text-decoration: none;
+  font-family: var(--font-heading);
+  letter-spacing: -0.5px;
+  transition: all 0.3s ease;
+  flex-shrink: 0;
+}
+
+.logo:hover {
+  transform: translateY(-2px);
+}
+
+.logo:hover .logo-image {
+  transform: scale(1.1);
+  box-shadow: 0 8px 25px rgba(96, 165, 250, 0.4);
+}
+
+[data-theme="dark"] .logo:hover .logo-image {
+  box-shadow: 0 8px 25px rgba(96, 165, 250, 0.5);
+}
+
+.logo:hover .logo-img {
+  transform: scale(1.05);
+}
+
+/* Mobile responsive */
+@media (max-width: 768px) {
+  .logo {
+    font-size: 1.25rem;
+  }
+
+  .logo-image {
+    width: 35px;
+    height: 35px;
+  }
+}
